@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>RISE-Multipurpose Html Template</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Css -->
+    <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Icons Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        window.onload = function(){
+            navigator.geolocation.getCurrentPosition(success);
+
+            function success(position) {
+                var b = position.coords.latitude;
+                var a = position.coords.longitude;
+                var link = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d49243.88618515856!2d"+a+"!3d"+b+"!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbars!5e0!3m2!1sen!2sus!4v1472760469096"
+                var iframe = document.createElement('iframe');
+                iframe.frameBorder=0;
+                iframe.width="100%";
+                iframe.height="475px";
+                iframe.id="randomid";
+                iframe.setAttribute("src", link);
+                document.getElementById("maps").appendChild(iframe);
+            }
+
+        }
+    </script>
+    <style>
+    .first {
+      background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('https://s-media-cache-ak0.pinimg.com/originals/dd/9a/2e/dd9a2e1567e388c36c10682de9b60597.jpg');
+}
+.second {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('https://images4.alphacoders.com/268/268154.jpg');
+}
+.third {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('http://img.wallpaperfolder.com/f/4CC5E6691E99/vegetables-food-fast-11508.jpg');
+}
+.fourth {
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ));
+}
+</style>
+</head>
+
+<body>
+    <!-- Preloader
+	============================================= -->
+    <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+    <!-- Header
+	============================================= -->
+    <section class="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#welcome"><img src="/img/grey.png"  alt="logo" height="55" width="55"></a>
+
+                </div>
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-8 col-xs-12 nav-wrap">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#services" class="page-scroll">Ingredients</a></li>
+                            <li><a href="#portfolio" class="page-scroll">Cocktails</a></li>
+                            <li><a href="#portfolio" class="page-scroll">Beer</a></li>
+                            <li><a href="#portfolio" class="page-scroll">Wine</a></li>
+                            <li><a href="#work-process" class="page-scroll">Pairings</a></li>
+                            <li><a href="#contact" class="page-scroll">Bars</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div id="owl-hero" class="owl-carousel owl-theme">
+            <div class="item first" >
+                <div class="caption">
+                    <h6>Expand Your Palate</h6>
+                    <h1>Potent Potables</h1>
+                    <a class="btn btn-transparent" href="#">Explore</a>
+                </div>
+            </div>
+            <div class="item second" >
+                <div class="caption">
+                    <h6>Refine Your Tastes</h6>
+                    <h1>Cocktails</h1>
+                    <a class="btn btn-transparent" href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="item third" >
+                <div class="caption">
+                    <h6>If clothes make the man, then drinks make the meal</h6>
+                    <h1>Pairings</h1>
+                    <a class="btn btn-transparent" href="#">Wine and Dine</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome
+	============================================= -->
+    <section id="welcome">
+        <div class="container">
+            <h2>Welcome To <span>Potent Potables</span></h2>
+            <hr class="sep">
+            <img class="img-responsive center-block wow fadeInUp" data-wow-delay=".3s" src="http://www.agrion.org/soireeEnergie/img/cocktail.png" alt="logo" height="300" width="300">
+
+            <p>Our goal is to help you learn to appreciate the finer points of drinking. We'll let you know what you can make with what you've got, teach you a thing or two about the classics, share some simple pairings, and introduce you to a few of your area's finest pubs. </p>
+        </div>
+    </section>
+
+    <!-- Services
+	============================================= -->
+    <section id="services">
+        <div class="container">
+            <h2>Ingredients</h2>
+            <hr class="light-sep">
+            <p>Tells us what you've got. We'll show you what you can make.</p>
+
+        </div>
+    </section>
+
+    <!-- Portfolio
+	============================================= -->
+    <section id="portfolio">
+        <div class="container-fluid">
+            <h2>Cocktails</h2>
+            <hr class="sep">
+            <p>Learn them. Make them. Drink them.</p>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a class="portfolio-box" href="img/portfolio/1.jpg" data-lightbox="image-1" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/kettel-one-vodka-martini.jpg" class="img-responsive" alt="1">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded" style="margin-top:-10%">
+                                    Vodka Martini
+                                </div>
+                                <p style="padding:5%; color:white">Vodka replaces gin in this variation of the classic martini. Shake until ice cold and serve up in a chilled martini glass.</p>
+                                <div class="project-name" style="text-align:left;margin-top:-10%">
+                                  <ul>
+                                    <li>3 fluid ounces vodka</li>
+                                    <li>1 fluid ounce dry vermouth</li>
+                                    <li>3 olives</li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/2.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/09/bourbon-old-fashioned.jpg" class="img-responsive" alt="2">
+                        <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-category text-faded" style="margin-top:-10%">
+                                  Old Fashioned
+                              </div>
+                              <p style="padding:5%; color:white">The Old Fashioned is a cocktail made by muddling sugar with bitters, with bourbon, and a twist of citrus rind.</p>
+                              <div class="project-name" style="text-align:left;margin-top:-10%">
+                                <ul>
+                                  <li>1 1/2 oz Bourbon</li>
+                                  <li>2 dashes Angostura bitters</li>
+                                  <li>1 Sugar cube</li>
+                                  <li>Few dashes plain water</li>
+                            <li>Citrus rind</li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/3.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2010/01/manhattan1.jpg" class="img-responsive" alt="3">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/4.jpg" class="portfolio-box" data-lightbox="image-4" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/02/Margarita-new.jpg" class="img-responsive" alt="4">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/5.jpg" class="portfolio-box" data-lightbox="image-5" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/irish-jack-rose.jpg" class="img-responsive" alt="5">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://3.bp.blogspot.com/-Dhsgi-6aVIc/VkYebJh3DEI/AAAAAAAAATI/9vLt6ls3Kfo/s1600/Stoli-Bloody-Mary-newest.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/01/cosmopolitain2.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/07/fa-Whiskey-Sour.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2010/05/daiquiri1.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/Side-by-Sidecar-new.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/01/Skinny-Mojito-newest.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/04/Traditional-Mai-Tai.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/09/Moscow-Mule-new.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/10/Irish-Coffee.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/02/fa-Beefeater-Tom-Collins.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/06/Sandeman-Ciderhouse-Sangria-new.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/09/02120028/white-russian-720x720-recipe.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://s3.amazonaws.com/liquor/wp-content/uploads/2013/11/recipe-hot-toddy.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/07/Long-Island-Iced-Tea.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/11/fa-dark_stormy.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://farm9.staticflickr.com/8155/7594169468_be302828bd_o.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2010/11/FA-black-russian-NEWEST.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/01/No.-3-Gin-Tonic.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2016/08/18132402/vodka-tonic-720x720-recipe.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2011/04/Dirty-Martini-newest.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="https://www.healthwisenri.com/wp-content/uploads/2013/06/HOT-CHOCOLATE-W-MARSHMALLOW1.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/03/hudson-rob-roy.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/05/Maison-Premiere-Sazerac.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://s3.amazonaws.com/liquor/wp-content/uploads/2013/04/Mint-Julep.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
+                        <img src="http://assets.epicurious.com/photos/54afe536d3789d374d8ff012/master/pass/51171430_pina-colada_1x1.jpg" class="img-responsive" alt="6">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Work Process
+	============================================= -->
+    <section id="work-process" style="margin-bottom: 7%">
+        <div class="container">
+            <h2>Pairings</h2>
+            <hr class="sep">
+            <p>Whether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.</p>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-3">
+                    <h4>Beef</h4>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-chicken"></span>
+                    <h4>Chicken</h4>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-fish"></span>
+                    <h4>Fish</h4>
+                    <img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+
+                </div>
+                <div class="col-lg-3">
+
+                    <h4>Dessert</h4>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-3">
+                    <h4>Shellfish</h4>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-chicken"></span>
+                    <h4>Cheese</h4>
+                    <img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                </div>
+                <div class="col-lg-3">
+                    <span class="icon-fish"></span>
+                    <h4>Bread</h4>
+                    <img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+
+                </div>
+                <div class="col-lg-3">
+
+                    <h4>Vegetables</h4>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Some Fune Facts
+	============================================= -->
+
+    <!-- Some Fune Facts
+	============================================= -->
+
+    <!-- Testimonials
+	============================================= -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Sauce for Thought</h2>
+            <hr class="light-sep">
+            <p></p>
+            <div id="owl-testi" class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5>Alcohol may be man's worst enemy, but the bible says love your enemy.<i class="fa fa-quote-right right fa-2x"></i></h5>
+                        <p><i>- Frank Sinatra</i></p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5>I love scotch. Scotchy scotch scotch. Here it goes down, down into my belly.<i class="fa fa-quote-right right fa-2x"></i></h5>
+                        <p><i>- Ron Burgandy</i></p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote">
+                        <i class="fa fa-quote-left left fa-2x"></i>
+                        <h5>Beer is proof that God loves us and wants us to be happy.<i class="fa fa-quote-right right fa-2x"></i></h5>
+                        <p><i>- Benjamin Franklin</i></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us
+	============================================= -->
+
+    <!-- Google Map
+	============================================= -->
+  <section id="contact" class="container content-section text-center" style="height: 10%;margin-bottom: -10px">
+  <div class="row">
+      <div style="height: 20%;" class="col-lg-8 col-lg-offset-2">
+          <HR COLOR="white" WIDTH="100%">
+
+          <h2>Bars</h2>
+          <p>Feel like hitting the town? Here's a few local pubs we think you'll enjoy. Just don't embarass us by ordering something lame. </p>
+      </div>
+  </div>
+
+</section>
+
+<!-- Map Section -->
+
+<div id="maps">
+<!--map dynamically added based on geo location-->
+</div>
+    <!-- Footer
+	============================================= -->
+    <footer>
+        <div class="container">
+            <h1>Potent Potables</h1>
+
+            <h6>&copy; 2016 Team 3</h6>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- JS PLUGINS -->
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
+    <script src="plugins/countTo/jquery.countTo.js"></script>
+    <script src="plugins/inview/jquery.inview.min.js"></script>
+    <script src="plugins/Lightbox/dist/js/lightbox.min.js"></script>
+    <script src="plugins/WOW/dist/wow.min.js"></script>
+    <!-- GOOGLE MAP -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</body>
+
+</html>
