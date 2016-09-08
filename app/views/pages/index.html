@@ -64,6 +64,155 @@
 .fourth {
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ));
 }
+.modalDialog {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 1px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.filter {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+.loginmodal-container {
+  padding: 30px;
+  max-width: 75%;
+  width: 100% !important;
+  opacity:1;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-help{
+  font-size: 12px;
+}
 </style>
 </head>
 
@@ -138,6 +287,22 @@
         </div>
     </section>
 
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        	  <div class="modal-dialog">
+    				<div class="loginmodal-container">
+    					<h1>Login to Your Account</h1><br>
+    				  <form>
+    					<input type="text" name="user" placeholder="Username">
+    					<input type="password" name="pass" placeholder="Password">
+    					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+    				  </form>
+
+    				  <div class="login-help">
+    					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+    				  </div>
+    				</div>
+    			</div>
+    		  </div>
     <!-- Services
 	============================================= -->
     <section id="services">
@@ -547,7 +712,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
                     <a href="img/portfolio/6.jpg" class="portfolio-box" data-lightbox="image-6" data-title="Your caption">
-                        <img src="https://www.healthwisenri.com/wp-content/uploads/2013/06/HOT-CHOCOLATE-W-MARSHMALLOW1.jpg" class="img-responsive" alt="6">
+                        <img src="http://img1.cookinglight.timeinc.net/sites/default/files/styles/500xvariable/public/image/Oxmoor/oh3468p49-barcelona-hot-chocolate-new-x.jpg?itok=wJZa2BsR" class="img-responsive" alt="6">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -634,46 +799,48 @@
             <div class="row wow fadeInUp" data-wow-delay=".3s">
                 <div class="col-lg-3">
                     <h4>Beef</h4>
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+
                 </div>
                 <div class="col-lg-3">
                     <span class="icon-chicken"></span>
                     <h4>Chicken</h4>
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#chicken-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
                 </div>
                 <div class="col-lg-3">
                     <span class="icon-fish"></span>
                     <h4>Fish</h4>
-                    <img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#fish-modal"><img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                 </div>
                 <div class="col-lg-3">
 
                     <h4>Dessert</h4>
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#dessert-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                 </div>
             </div>
             <div class="row wow fadeInUp" data-wow-delay=".3s">
                 <div class="col-lg-3">
                     <h4>Shellfish</h4>
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
                 </div>
                 <div class="col-lg-3">
                     <span class="icon-chicken"></span>
                     <h4>Cheese</h4>
-                    <img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
                 </div>
                 <div class="col-lg-3">
                     <span class="icon-fish"></span>
                     <h4>Bread</h4>
-                    <img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                 </div>
                 <div class="col-lg-3">
 
                     <h4>Vegetables</h4>
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%">
+                    <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                 </div>
             </div>
@@ -766,6 +933,112 @@
     <script src="plugins/WOW/dist/wow.min.js"></script>
     <!-- GOOGLE MAP -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <div class="modal fade" id="beef-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        	  <div class="modal-dialog">
+    				<div class="loginmodal-container">
+    					<h1>Beef</h1><br>
+              <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+    				<p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+    				</div>
+    			</div>
+    		  </div>
+          <div class="modal fade" id="chicken-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+              	  <div class="modal-dialog">
+          				<div class="loginmodal-container">
+                    <h1>Chicken</h1><br>
+                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                  <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+          				</div>
+          			</div>
+          		  </div>
+                <div class="modal fade" id="fish-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                          <div class="loginmodal-container">
+                            <h1>Fish</h1><br>
+                            <img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                          <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                  				</div>
+                      </div>
+                      </div>
+
+                      <div class="modal fade" id="dessert-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                              <div class="modal-dialog">
+                                <div class="loginmodal-container">
+                                  <h1>Dessert</h1><br>
+                                  <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                                <p style="text-align:center;color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+                                </div>
+                            </div>
+                            </div>
+                            <div class="modal fade" id="shellfish-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                      <div class="loginmodal-container">
+                                        <h1>Shellfish</h1><br>
+                                        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                                      <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                              				</div>
+                                  </div>
+                                  </div>
+                                  <div class="modal fade" id="cheese-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                          <div class="modal-dialog">
+                                            <div class="loginmodal-container">
+                                              <h1>Cheese</h1><br>
+                                              <img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                                            <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                                    				</div>
+                                        </div>
+                                        </div>
+                                        <div class="modal fade" id="bread-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                <div class="modal-dialog">
+                                                  <div class="loginmodal-container">
+                                                    <h1>Bread</h1><br>
+                                                    <img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                                                  <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                                          				</div>
+                                              </div>
+                                              </div>
+                                              <div class="modal fade" id="veg-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                      <div class="modal-dialog">
+                                                        <div class="loginmodal-container">
+                                                          <h1>Vegetables</h1><br>
+                                                          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
+
+                                                        <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                                                				</div>
+                                                    </div>
+                                                    </div>
+
+
+
 </body>
 
 </html>
