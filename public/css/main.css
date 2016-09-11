@@ -364,7 +364,8 @@ Welcome Style
 Services Style
 ========================================================================== */
 #services {
-  background: #24242a;
+  background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg");
+
   padding: 60px 0;
   text-align: center;
 }
