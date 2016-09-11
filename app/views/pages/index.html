@@ -64,6 +64,38 @@
 .fourth {
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ));
 }
+
+
+#exTab1 .tab-content {
+  color : red;
+  background-image: url("http://www.lioncloud.co/wp-content/uploads/2016/08/unique-decoration-dark-wood-walls-wallpapers-black-wood-wall.jpg");
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : red;
+  background-image: url("http://www.lioncloud.co/wp-content/uploads/2016/08/unique-decoration-dark-wood-walls-wallpapers-black-wood-wall.jpg");
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg");
+  padding : 5px 15px;
+}
+
 .modalDialog {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -238,11 +270,9 @@
                 <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                     <div class="col-md-8 col-xs-12 nav-wrap">
                         <ul class="nav navbar-nav">
-                            <li><a href="#services" class="page-scroll">Ingredients</a></li>
+                            <li><a href="#services" class="page-scroll">Bartender</a></li>
                             <li><a href="#portfolio" class="page-scroll">Cocktails</a></li>
-                            <li><a href="#portfolio" class="page-scroll">Beer</a></li>
-                            <li><a href="#portfolio" class="page-scroll">Wine</a></li>
-                            <li><a href="#work-process" class="page-scroll">Pairings</a></li>
+                            <li><a href="#testimonials" class="page-scroll">Quotes</a></li>
                             <li><a href="#contact" class="page-scroll">Bars</a></li>
                         </ul>
                     </div>
@@ -277,48 +307,207 @@
 
     <!-- Welcome
 	============================================= -->
-    <section id="welcome">
+    <section id="welcome" >
         <div class="container">
             <h2>Welcome To <span>Potent Potables</span></h2>
             <hr class="sep">
-            <img class="img-responsive center-block wow fadeInUp" data-wow-delay=".3s" src="http://www.agrion.org/soireeEnergie/img/cocktail.png" alt="logo" height="300" width="300">
+            <img class="img-responsive center-block wow fadeInUp" data-wow-delay=".3s" src="http://www.agrion.org/soireeEnergie/img/cocktail.png" alt="logo" height="200" width="200">
 
             <p>Our goal is to help you learn to appreciate the finer points of drinking. We'll let you know what you can make with what you've got, teach you a thing or two about the classics, share some simple pairings, and introduce you to a few of your area's finest pubs. </p>
         </div>
+
     </section>
 
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-        	  <div class="modal-dialog">
-    				<div class="loginmodal-container">
-    					<h1>Login to Your Account</h1><br>
-    				  <form>
-    					<input type="text" name="user" placeholder="Username">
-    					<input type="password" name="pass" placeholder="Password">
-    					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
-    				  </form>
-
-    				  <div class="login-help">
-    					<a href="#">Register</a> - <a href="#">Forgot Password</a>
-    				  </div>
-    				</div>
-    			</div>
-    		  </div>
     <!-- Services
 	============================================= -->
     <section id="services">
         <div class="container">
-            <h2>Ingredients</h2>
+            <h2>BARTENDER</h2>
             <hr class="light-sep">
-            <p>Tells us what you've got. We'll show you what you can make.</p>
-
+            <p>Our state of the art Basic Alcohol Research Tool for Experiencing New Drinks and Enjoying Responsibly (BARTENDER for short) will help you find the perfect drink. Whether you want to make something with what you've got on hand, pair a spirit with your spirits, match it to some music, wine and dine, or wet your whistle with the weather, the BARTENDER has you covered.</p>
         </div>
+        <div class="container">
+
+            <div class="row" style="width:100%">
+            	<div class="col-md-6">
+                    <div class="panel with-nav-tabs panel-default" style="width:210%;margin-top:10%">
+                        <div class="panel-heading">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab1default" data-toggle="tab" style="color:black">Ingredients</a></li>
+                                    <li><a href="#tab2default" data-toggle="tab" style="color:black">Mood</a></li>
+                                    <li><a href="#tab3default" data-toggle="tab" style="color:black">Music</a></li>
+
+                                    <li><a href="#tab4default" data-toggle="tab" style="color:black">Food</a></li>
+                                    <li><a href="#tab5default" data-toggle="tab" style="color:black">Weather</a></li>
+
+                                </ul>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                                <div class="tab-pane fade" id="tab2default">
+                                  <div class="container" style="margin-left:-5%">
+
+                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
+                                          <div class="col-lg-3">
+                                              <h4>Happy</h4>
+                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/263a.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-chicken"></span>
+                                              <h4>Hungover</h4>
+                                              <a href="#" data-toggle="modal" data-target="#chicken-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f635.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-fish"></span>
+                                              <h4>Excited</h4>
+                                              <a href="#" data-toggle="modal" data-target="#fish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f606.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                          <div class="col-lg-3">
+
+                                              <h4>Stressed</h4>
+                                              <a href="#" data-toggle="modal" data-target="#dessert-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f613.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                      </div>
+                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
+                                          <div class="col-lg-3">
+                                              <h4>Flirty</h4>
+                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-chicken"></span>
+                                              <h4>Sick</h4>
+                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-fish"></span>
+                                              <h4>Heart Broken</h4>
+                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                          <div class="col-lg-3">
+
+                                              <h4>Flush</h4>
+                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                      </div>
+                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
+                                          <div class="col-lg-3">
+                                              <h4>Flirty</h4>
+                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-chicken"></span>
+                                              <h4>Sick</h4>
+                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-fish"></span>
+                                              <h4>Heart Broken</h4>
+                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                          <div class="col-lg-3">
+
+                                              <h4>Flush</h4>
+                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3default" style="background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg")">
+
+                                  <form style="text-align:left" >
+                                    <input type="radio" name="gender" value="male" checked> Blues<br>
+                                    <input type="radio" name="gender" value="female"> Classical<br>
+                                    <input type="radio" name="gender" value="female"> Country<br>
+                                  <input type="radio" name="gender" value="female"> Electronic<br>
+                                    <input type="radio" name="gender" value="female"> Folk<br>
+                                  <input type="radio" name="gender" value="female"> Jazz<br>
+                                    <input type="radio" name="gender" value="female"> Alternative<br>
+                                    <input type="radio" name="gender" value="female"> Reggae<br>
+
+                                    <input type="radio" name="gender" value="other"> Rock
+                                  </form>
+                                </div>
+                                <div class="tab-pane fade" id="tab4default">
+                                  <div class="container" style="margin-left:-5%">
+
+                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
+                                          <div class="col-lg-3">
+                                              <h4>Beef</h4>
+                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-chicken"></span>
+                                              <h4>Chicken</h4>
+                                              <a href="#" data-toggle="modal" data-target="#chicken-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-fish"></span>
+                                              <h4>Fish</h4>
+                                              <a href="#" data-toggle="modal" data-target="#fish-modal"><img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                          <div class="col-lg-3">
+
+                                              <h4>Dessert</h4>
+                                              <a href="#" data-toggle="modal" data-target="#dessert-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                      </div>
+                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
+                                          <div class="col-lg-3">
+                                              <h4>Shellfish</h4>
+                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-chicken"></span>
+                                              <h4>Cheese</h4>
+                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                          </div>
+                                          <div class="col-lg-3">
+                                              <span class="icon-fish"></span>
+                                              <h4>Bread</h4>
+                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                          <div class="col-lg-3">
+
+                                              <h4>Vegetables</h4>
+                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab5default"><!-- weather widget start --><a href="//www.booked.net/weather/sparks-w677561"><img src="//w.bookcdn.com/weather/picture/26_w677561_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" /></a><!-- weather widget end --></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        	</div>
+        </div>
+
+
+        <br/>
     </section>
 
     <!-- Portfolio
 	============================================= -->
     <section id="portfolio">
         <div class="container-fluid">
-            <h2>Cocktails</h2>
+            <h2> Classic Cocktails</h2>
             <hr class="sep">
             <p>Learn them. Make them. Drink them.</p>
             <div class="row">
@@ -791,7 +980,7 @@
     </section>
     <!-- Work Process
 	============================================= -->
-    <section id="work-process" style="margin-bottom: 7%">
+    <!-- <section id="work-process" style="margin-bottom: 7%">
         <div class="container">
             <h2>Pairings</h2>
             <hr class="sep">
@@ -845,7 +1034,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Some Fune Facts
 	============================================= -->
 
@@ -890,6 +1079,15 @@
     <!-- Contact Us
 	============================================= -->
 
+
+
+
+
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  	<!-- Placed at the end of the document so the pages load faster -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <!-- Google Map
 	============================================= -->
   <section id="contact" class="container content-section text-center" style="height: 10%;margin-bottom: -10px">
@@ -939,7 +1137,15 @@
     					<h1>Beef</h1><br>
               <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
 
-    				<p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+    				<p style="text-align:center;color:white">
+              The inside of your steak should be red, just like the drinks that pair best with it
+              <ul style="color:white">
+                <li>Merlot</li>
+                <li>Cabernet Sauvignon</li>
+                <li>Syrah</li>
+                <li>Mourvedre</li>
+              </ul>
+            </p>
 
     				</div>
     			</div>
@@ -950,8 +1156,14 @@
                     <h1>Chicken</h1><br>
                     <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive filter" alt="6" style="margin: 0 auto;">
 
-                  <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
-
+                  <p style="text-align:center;color:white"> We suggest pairing a herbed chicken parmesan with a nice pino noir. Or a 30 piece nugget meal and a bottle of barefoot merlot. You do you.
+                  <ul style="color:white">
+                    <li>Merlot</li>
+                    <li>Cab Franc</li>
+                    <li>Pinot Noir</li>
+                    <li>Grenache</li>
+                  </ul>
+</p>
 
 
           				</div>
