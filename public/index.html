@@ -246,6 +246,36 @@
   font-size: 12px;
 }
 </style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+      $(function () {
+          function moveItems(origin, dest) {
+              $(origin).find(':selected').appendTo(dest);
+          }
+
+          function moveAllItems(origin, dest) {
+              $(origin).children().appendTo(dest);
+          }
+
+          $('#left').click(function () {
+              moveItems('#sbTwo', '#sbOne');
+          });
+
+          $('#right').on('click', function () {
+              moveItems('#sbOne', '#sbTwo');
+          });
+
+          $('#leftall').on('click', function () {
+              moveAllItems('#sbTwo', '#sbOne');
+          });
+
+          $('#rightall').on('click', function () {
+              moveAllItems('#sbOne', '#sbTwo');
+          });
+      });
+  </script>
+
 </head>
 
 <body>
@@ -344,7 +374,30 @@
                         </div>
                         <div class="panel-body">
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                                <div class="tab-pane fade in active" id="tab1default">
+
+                                  <select style="width:30%" id="sbOne" multiple="multiple">
+        <option value="1">Alpha</option>
+        <option value="2">Beta</option>
+        <option value="3">Gamma</option>
+        <option value="4">Delta</option>
+        <option value="5">Epsilon</option>
+    </select>
+
+    <select  style="width:30%"id="sbTwo" multiple="multiple">
+        <option value="6">Zeta</option>
+        <option value="7">Eta</option>
+    </select>
+
+    <br />
+
+    <input type="button" id="left" value="<" />
+    <input type="button" id="right" value=">" />
+
+
+
+
+                                </div>
                                 <div class="tab-pane fade" id="tab2default">
                                   <div class="container" style="margin-left:-5%">
 
