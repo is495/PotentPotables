@@ -5,7 +5,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>RISE-Multipurpose Html Template</title>
+    <title>Potent Potables</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -275,7 +275,41 @@
           });
       });
   </script>
+<style>
+.switch {
+  background: black;
+  background-image: -webkit-linear-gradient(top, black, grey);
+  background-image: -moz-linear-gradient(top, black, grey);
+  background-image: -ms-linear-gradient(top, black, grey);
+  background-image: -o-linear-gradient(top, black, grey);
+  background-image: linear-gradient(to bottom, black, grey);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
+.switch:hover {
+  background: grey;
+  background-image: -webkit-linear-gradient(top, grey, black);
+  background-image: -moz-linear-gradient(top, grey, black);
+  background-image: -ms-linear-gradient(top, grey, black);
+  background-image: -o-linear-gradient(top, grey, black);
+  background-image: linear-gradient(to bottom, grey, black);
+  text-decoration: none;
+}
+.selext{
+
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border: 3px solid #24242A;
+}
+</style>
 </head>
 
 <body>
@@ -376,23 +410,39 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="tab1default">
 
-                                  <select style="width:30%" id="sbOne" multiple="multiple">
-        <option value="1">Alpha</option>
+                                  <select class="selext"style="width:30%;height:300px;background-color:#CDCDCD" id="sbOne" multiple="multiple">
+        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
         <option value="2">Beta</option>
         <option value="3">Gamma</option>
         <option value="4">Delta</option>
         <option value="5">Epsilon</option>
+        <option value="6">Zeta</option>
+        <option value="7">Eta</option>
+        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
+        <option value="2">Beta</option>
+        <option value="3">Gamma</option>
+        <option value="4">Delta</option>
+        <option value="5">Epsilon</option>
+        <option value="6">Zeta</option>
+        <option value="7">Eta</option>
+        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
+        <option value="2">Beta</option>
+        <option value="3">Gamma</option>
+        <option value="4">Delta</option>
+        <option value="5">Epsilon</option>
+        <option value="6">Zeta</option>
+        <option value="7">Eta</option>
     </select>
-
-    <select  style="width:30%"id="sbTwo" multiple="multiple">
+    <input type="button" class="switch" id="left" value="<" />
+    <input type="button"class="switch" id="right" value=">" />
+    <select  class="selext"style="width:30%;height:300px;background-color:#CDCDCD"id="sbTwo" multiple="multiple">
         <option value="6">Zeta</option>
         <option value="7">Eta</option>
     </select>
 
     <br />
 
-    <input type="button" id="left" value="<" />
-    <input type="button" id="right" value=">" />
+
 
 
 
