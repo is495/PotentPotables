@@ -4,9 +4,9 @@
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
+<!-- Title -->
     <title>Potent Potables</title>
-
+<!-- Meta Data -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -24,14 +24,19 @@
     <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
     <link href="plugins/animate.css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- Icons Font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<script>
+
+
+</script>
+
+<script>
+
+</script>
+    <!-- Geolocation Function + BarMap -->
     <script>
         window.onload = function(){
             navigator.geolocation.getCurrentPosition(success);
@@ -51,7 +56,10 @@
 
         }
     </script>
+    <!-- Various Styles -->
     <style>
+
+
     .first {
       background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('https://s-media-cache-ak0.pinimg.com/originals/dd/9a/2e/dd9a2e1567e388c36c10682de9b60597.jpg');
 }
@@ -241,14 +249,38 @@
   opacity: 0.6;
   transition: opacity ease 0.5s;
 }
-
+.containerdiv {
+  border: 0;
+  float: left;
+  position: relative;
+}
+.cornerimage {
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+ }
 .login-help{
   font-size: 12px;
 }
+.all{
+  visibility: visible;
+}
+.some{
+
+}
+.none{
+
+}
+.red { color: red }
+.green { color: green }
 </style>
+<!-- Jquery SRC -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-  <script type="text/javascript">
+<!-- MultiSelect Function -->
+<script type="text/javascript">
       $(function () {
           function moveItems(origin, dest) {
               $(origin).find(':selected').appendTo(dest);
@@ -275,6 +307,7 @@
           });
       });
   </script>
+  <!-- Multi Select Function Style -->
 <style>
 .switch {
   background: black;
@@ -318,6 +351,7 @@
     <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
     <!-- Header
 	============================================= -->
+  <!-- Header and Nav -->
     <section class="main-header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -344,6 +378,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Carousel -->
         <div id="owl-hero" class="owl-carousel owl-theme">
             <div class="item first" >
                 <div class="caption">
@@ -382,13 +418,13 @@
 
     </section>
 
-    <!-- Services
+    <!-- Bartender
 	============================================= -->
     <section id="services">
         <div class="container">
             <h2>BARTENDER</h2>
             <hr class="light-sep">
-            <p>Our state of the art Basic Alcohol Research Tool for Experiencing New Drinks and Enjoying Responsibly (BARTENDER for short) will help you find the perfect drink. Whether you want to make something with what you've got on hand, pair a spirit with your spirits, match it to some music, wine and dine, or wet your whistle with the weather, the BARTENDER has you covered.</p>
+            <p class="newclass">Our state of the art Basic Alcohol Research Tool for Experiencing New Drinks and Enjoying Responsibly (BARTENDER for short) will help you find the perfect drink. Whether you want to make something with what you've got on hand, pair a spirit with your spirits, match it to some music, wine and dine, or wet your whistle with the weather, the BARTENDER has you covered.</p>
         </div>
         <div class="container">
 
@@ -396,6 +432,7 @@
             	<div class="col-md-6">
                     <div class="panel with-nav-tabs panel-default" style="width:210%;margin-top:10%">
                         <div class="panel-heading">
+<!-- Bartender Labels -->
                                 <ul class="nav nav-tabs">
                                     <li class="active"><a href="#tab1default" data-toggle="tab" style="color:black">Ingredients</a></li>
                                     <li><a href="#tab2default" data-toggle="tab" style="color:black">Mood</a></li>
@@ -405,39 +442,38 @@
                                     <li><a href="#tab5default" data-toggle="tab" style="color:black">Weather</a></li>
 
                                 </ul>
-                        </div>
-                        <div class="panel-body">
+                              </div>
+                        <div class="panel-body"style="background-color:white">
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab1default">
 
-                                  <select class="selext"style="width:30%;height:300px;background-color:#CDCDCD" id="sbOne" multiple="multiple">
-        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
-        <option value="2">Beta</option>
-        <option value="3">Gamma</option>
-        <option value="4">Delta</option>
-        <option value="5">Epsilon</option>
-        <option value="6">Zeta</option>
-        <option value="7">Eta</option>
-        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
-        <option value="2">Beta</option>
-        <option value="3">Gamma</option>
-        <option value="4">Delta</option>
-        <option value="5">Epsilon</option>
-        <option value="6">Zeta</option>
-        <option value="7">Eta</option>
-        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Alpha</option>
-        <option value="2">Beta</option>
-        <option value="3">Gamma</option>
-        <option value="4">Delta</option>
-        <option value="5">Epsilon</option>
-        <option value="6">Zeta</option>
-        <option value="7">Eta</option>
+<!-- Ingredients Options -->
+                                <div class="tab-pane fade in active"  id="tab1default">
+
+                                  <select class="selext"style="width:30%;height:300px;background-color:#CDCDCD;" id="sbOne" multiple="multiple">
+        <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Ingredients</option>
+        <option value="vodka">Vodka</option>
+        <option value="vermouth">Vermouth</option>
+        <option value="olives">Olives</option>
+        <option value="bourbon">Bourbon</option>
+        <option value="bitters">Bitters</option>
+        <option value="sugar">Sugar Cubes</option>
+        <option value="rind">Citrus Rind</option>
+        <option value="water">Water</option>
+        <option value="cherries">Cherries</option>
+        <option value="whiskey">Whiskey</option>
+
+
     </select>
-    <input type="button" class="switch" id="left" value="<" />
-    <input type="button"class="switch" id="right" value=">" />
+    <span style="display: inline-block; width: 70px; vertical-align: top;margin-top:5%">
+      <input type="button" class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="left" value=" -" />
+      <input type="button"class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="right" value="+" />
+      <input onclick="myFunction()" href="#contact" type="button"class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="calc" value="=" />
+<!-- <a href="#contact" class="page-scroll">Bars</a> -->
+        </span>
+
+
     <select  class="selext"style="width:30%;height:300px;background-color:#CDCDCD"id="sbTwo" multiple="multiple">
-        <option value="6">Zeta</option>
-        <option value="7">Eta</option>
+
     </select>
 
     <br />
@@ -448,6 +484,7 @@
 
 
                                 </div>
+
                                 <div class="tab-pane fade" id="tab2default">
                                   <div class="container" style="margin-left:-5%">
 
@@ -495,35 +532,36 @@
                                           <div class="col-lg-3">
 
                                               <h4>Flush</h4>
-                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                              <a href="#" data-toggle="modal" data-target="#flush-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                                           </div>
                                       </div>
                                       <div class="row wow fadeInUp" data-wow-delay=".3s">
                                           <div class="col-lg-3">
-                                              <h4>Flirty</h4>
-                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                              <h4>Fed Up</h4>
+                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f611.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
                                           </div>
                                           <div class="col-lg-3">
                                               <span class="icon-chicken"></span>
-                                              <h4>Sick</h4>
-                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                              <h4>Tired</h4>
+                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f634.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
                                           </div>
                                           <div class="col-lg-3">
                                               <span class="icon-fish"></span>
-                                              <h4>Heart Broken</h4>
-                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                              <h4>Stoked</h4>
+                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                                           </div>
                                           <div class="col-lg-3">
 
-                                              <h4>Flush</h4>
-                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
+                                              <h4>Relaxed</h4>
+                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f60c.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
 
                                           </div>
                                       </div>
                                   </div>
                                 </div>
+<!-- Music Options -->
                                 <div class="tab-pane fade" id="tab3default" style="background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg")">
 
                                   <div class="container" style="margin-left:-2%">
@@ -599,6 +637,7 @@
                                       </div>
                                   </div>
                                 </div>
+<!-- Food Options -->
                                 <div class="tab-pane fade" id="tab4default">
                                   <div class="container" style="margin-left:-5%">
 
@@ -652,7 +691,9 @@
                                       </div>
                                   </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab5default"><!-- weather widget start --><a href="//www.booked.net/weather/sparks-w677561"><img src="//w.bookcdn.com/weather/picture/26_w677561_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" /></a><!-- weather widget end --></div>
+<!-- Weather Options -->
+                                <div class="tab-pane fade" id="tab5default">
+                                  <!-- weather widget start --><a href="//www.booked.net/weather/sparks-w677561"><img src="//w.bookcdn.com/weather/picture/26_w677561_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" /></a><!-- weather widget end --></div>
 
                             </div>
                         </div>
@@ -666,17 +707,21 @@
         <br/>
     </section>
 
-    <!-- Portfolio
+    <!-- Cocktails
 	============================================= -->
     <section id="portfolio">
         <div class="container-fluid">
-            <h2> Classic Cocktails</h2>
+            <h2 > Classic Cocktails</h2>
             <hr class="sep">
             <p>Learn them. Make them. Drink them.</p>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class=" containerdiv col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
                     <a class="portfolio-box" href="img/portfolio/1.jpg" data-lightbox="image-1" data-title="Your caption">
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/kettel-one-vodka-martini.jpg" class="img-responsive" alt="1">
+<div class="cornerimage">
+  <img class="martini" src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
+
+</div>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded" style="margin-top:-10%">
@@ -685,9 +730,9 @@
                                 <p style="padding:5%; color:white">Vodka replaces gin in this variation of the classic martini. Shake until ice cold and serve up in a chilled martini glass.</p>
                                 <div class="project-name" style="text-align:left;margin-top:-10%">
                                   <ul>
-                                    <li>3 fluid ounces vodka</li>
-                                    <li>1 fluid ounce dry vermouth</li>
-                                    <li>3 olives</li>
+                                    <li class="ingredient vodka">3 fluid ounces vodka</li>
+                                    <li class="vermouth">1 fluid ounce dry vermouth</li>
+                                    <li class="olives">3 olives</li>
                                   </ul>
                                 </div>
                             </div>
@@ -705,11 +750,11 @@
                               <p style="padding:5%; color:white">The Old Fashioned is a cocktail made by muddling sugar with bitters, with bourbon, and a twist of citrus rind.</p>
                               <div class="project-name" style="text-align:left;margin-top:-10%">
                                 <ul>
-                                  <li>1 1/2 oz Bourbon</li>
-                                  <li>2 dashes Angostura bitters</li>
-                                  <li>1 Sugar cube</li>
-                                  <li>Few dashes plain water</li>
-                            <li>Citrus rind</li>
+                                  <li class="bourbon">1 1/2 oz Bourbon</li>
+                                  <li class="bitters">2 dashes Angostura bitters</li>
+                                  <li class="sugar">1 Sugar cube</li>
+                                  <li class="water">Few dashes plain water</li>
+                            <li class="rind">Citrus rind</li>
                                 </ul>
                               </div>
                           </div>
@@ -720,18 +765,25 @@
                     <a href="img/portfolio/3.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2010/01/manhattan1.jpg" class="img-responsive" alt="3">
                         <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-category text-faded" style="margin-top:-10%">
+                                  Manhattan
+                              </div>
+                              <p style="padding:5%; color:white">A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters. Commonly used whiskeys include rye, Canadian whisky, bourbon, blended whiskey, and Tennessee whiskey.</p>
+                              <div class="project-name" style="text-align:left;margin-top:-10%">
+                                <ul>
+                                  <li class="whiskey">2 Parts Whiskey</li>
+                                  <li class="bitters">2 Dashes Bitters</li>
+                                  <li class="vermouth">1 Part Vermouth</li>
+                                  <li class="cherries">2 Maraschino Cherries</li>
+                            <li class="rind">Citrus rind</li>
+                                </ul>
+                              </div>
+                          </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                <!-- <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
                     <a href="img/portfolio/4.jpg" class="portfolio-box" data-lightbox="image-4" data-title="Your caption">
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2013/02/Margarita-new.jpg" class="img-responsive" alt="4">
                         <div class="portfolio-box-caption">
@@ -1139,7 +1191,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- Work Process
 	============================================= -->
@@ -1283,6 +1335,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-assets/js/bootstrap.min.js"></script>
+    <script src="bootstrap-assets/js/cocktails.js"></script>
+
     <script src="js/custom.js"></script>
     <!-- JS PLUGINS -->
     <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
@@ -1411,7 +1465,19 @@
                                                 				</div>
                                                     </div>
                                                     </div>
+                                                    <div class="modal fade" id="flush-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                            <div class="modal-dialog">
+                                                              <div class="loginmodal-container">
+                                                                <h1>Flush</h1><br>
+                                                                <img src="https://media.giphy.com/media/DfLwM9kttDFEQ/giphy.gif" alt="Computer man" style="width:150px;height:150px;margin:0 auto">
 
+                                                              <p style="text-align:center;color:white">sdfadssaWhether you want to enjoy your meal more, impress your significant other, or just like posting pictures of your food on Instagram, knowing the basics of pairing goes a long way.fdsafdsafadsfdsafadsfdsafdasfdsafdsafadsfasd</p>
+
+
+
+                                                              </div>
+                                                          </div>
+                                                          </div>
 
 
 </body>

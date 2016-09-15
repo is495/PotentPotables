@@ -5911,6 +5911,7 @@ button.close {
 }
 .modal-open {
   overflow: hidden;
+  padding-right: -15px;
 }
 .modal {
   position: fixed;
