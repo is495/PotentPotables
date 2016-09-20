@@ -1,15 +1,26 @@
 $(document).ready(function(){
 
+
 })
 function myFunction() {
+
+
+
+
   $("li").removeClass('green');
   $("img").removeClass('all');
   $("img").removeClass('some');
   $("img").removeClass('none');
 
   location.href = "#portfolio";
-  var ingredients= $('#sbTwo').val();  var n = ingredients.includes("vodka");
-  if (n==true) {    $( ".vodka" ).addClass(function( index ) {
+  // var ingredients= $('#sbTwo').val();
+  var test= $("#test").text();
+  // alert(test);
+  var si = test.includes("Vodka");
+// alert('here')
+  //  var n = ingredients.includes("vodka");
+
+  if (si==true) {    $( ".vodka" ).addClass(function( index ) {
       return "green" ;
     });
 }
@@ -17,7 +28,7 @@ else {  $( ".vodka" ).addClass(function( index ) {
     return "red" ;
   });
 }
-var n = ingredients.includes("vermouth");
+var n = test.includes("Vermouth");
 if (n==true) {  $( ".vermouth" ).addClass(function( index ) {
     return "green" ;
   });
@@ -26,7 +37,7 @@ else {$( ".vermouth" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("olives");
+var n = test.includes("Olives");
 if (n==true) {  $( ".olives" ).addClass(function( index ) {
     return "green" ;
   });
@@ -35,7 +46,7 @@ else {$( ".olives" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("bourbon");
+var n = test.includes("Bourbon");
 if (n==true) {  $( ".bourbon" ).addClass(function( index ) {
     return "green" ;
   });
@@ -44,7 +55,7 @@ else {$( ".bourbon" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("bitters");
+var n = test.includes("Bitters");
 if (n==true) {  $( ".bitters" ).addClass(function( index ) {
     return "green" ;
   });
@@ -54,7 +65,7 @@ $( ".bitters" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("sugar");
+var n = test.includes("Sugar");
 if (n==true) {
   $( ".sugar" ).addClass(function( index ) {
     return "green" ;
@@ -65,7 +76,7 @@ $( ".sugar" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("water");
+var n = test.includes("Water");
 if (n==true) {
   $( ".water" ).addClass(function( index ) {
     return "green" ;
@@ -76,7 +87,7 @@ $( ".water" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("rind");
+var n = test.includes("Rind");
 if (n==true) {
   $( ".rind" ).addClass(function( index ) {
     return "green" ;
@@ -87,7 +98,7 @@ $( ".rind" ).addClass(function( index ) {
   return "red" ;
 });
 }
-var n = ingredients.includes("cherries");
+var n = test.includes("Cherries");
 if (n==true) {
   $( ".cherries" ).addClass(function( index ) {
     return "green" ;
@@ -99,7 +110,7 @@ $( ".cherries" ).addClass(function( index ) {
 });
 }
 
-var n = ingredients.includes("whiskey");
+var n = test.includes("Whiskey");
 if (n==true) {
   $( ".whiskey" ).addClass(function( index ) {
     return "green" ;
@@ -111,9 +122,9 @@ $( ".whiskey" ).addClass(function( index ) {
 });
 }
 // martini start
-var n = ingredients.includes("bourbon");
-var v = ingredients.includes("bitters");
-var s = ingredients.includes("sugar");
+var n = test.includes("Bourbon");
+var v = test.includes("Bitters");
+var s = test.includes("Sugar");
 
 if ((n==true) && (v==true)&& (s==true)) {
   $( ".old-all" ).addClass(function( index ) {
@@ -131,9 +142,9 @@ $( ".old-none" ).addClass(function( index ) {
 });
 }
 // manhattan start
-var n = ingredients.includes("whiskey");
-var v = ingredients.includes("bitters");
-var s = ingredients.includes("vermouth");
+var n = test.includes("Whiskey");
+var v = test.includes("Bitters");
+var s = test.includes("Vermouth");
 
 if ((n==true) && (v==true)&& (s==true)) {
   $( ".man-all" ).addClass(function( index ) {
@@ -152,8 +163,8 @@ $( ".man-none" ).addClass(function( index ) {
 }
 
 // martini start
-var n = ingredients.includes("vodka");
-var v = ingredients.includes("vermouth");
+var n = test.includes("Vodka");
+var v = test.includes("Vermouth");
 if ((n==true) && (v==true)) {
   $( ".martini-all" ).addClass(function( index ) {
     return "all" ;
