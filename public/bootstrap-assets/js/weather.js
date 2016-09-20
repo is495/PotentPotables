@@ -3,7 +3,7 @@ $(document).ready(function(){
     var request = new XMLHttpRequest();
 
    var method = 'GET';
-   var url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&sensor=true';
+   var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&sensor=true';
    var async = true;
 
    request.open(method, url, async);
@@ -26,7 +26,7 @@ $(document).ready(function(){
             state=state.replace(/ /g,"_");
 
             var weather = new XMLHttpRequest();
-            weather.open("GET", "http://api.wunderground.com/api/fa5715ba5adff2ac/conditions/q/"+state+"/"+city+".json", false);
+            weather.open("GET", "https://api.wunderground.com/api/fa5715ba5adff2ac/conditions/q/"+state+"/"+city+".json", false);
             weather.send(null);
 
             var r = JSON.parse(weather.response);
