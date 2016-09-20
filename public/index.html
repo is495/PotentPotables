@@ -62,7 +62,11 @@
           });
       });
   </script> -->
-
+  <style>
+  .column { float: left; margin: 0 2.5% 1em 0; width: 22.5%; }
+.column:nth-child(4n) { margin-right: 0; }
+.column:nth-child(4n+1) { clear: left; }
+  </style>
 </head>
 <body>
     <!-- Preloader
@@ -145,12 +149,11 @@
 <!-- Bartender Labels -->
                                 <ul class="nav nav-tabs">
                                     <li class="active"><a href="#tab1default" data-toggle="tab" style="color:black">Ingredients</a></li>
-                                    <li><a href="#tab2default" data-toggle="tab" style="color:black">Mood</a></li>
-                                    <li><a href="#tab3default" data-toggle="tab" style="color:black">Music</a></li>
-
-                                    <li><a href="#tab4default" data-toggle="tab" style="color:black">Food</a></li>
+                                    <li><a href="#tab6default" data-toggle="tab" style="color:black">Mood</a></li>
+                                    <li><a href="#tab7default" data-toggle="tab" style="color:black">Music</a></li>
+                                    <li><a href="#tab8default" data-toggle="tab" style="color:black">Food</a></li>
                                     <li><a href="#tab5default" data-toggle="tab" style="color:black">Weather</a></li>
-
+                            
                                 </ul>
                               </div>
                         <div class="panel-body"style="background-color:white">
@@ -207,229 +210,82 @@
 </div>
     <br />
     <div style="margin-left:13%;" >
-
-
-
 </div>
 
-
-
-
-
                                 </div>
 
-                                <div class="tab-pane fade" id="tab2default">
-                                  <div class="container" style="margin-left:-5%">
 
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Happy</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/263a.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Hungover</h4>
-                                              <a href="#" data-toggle="modal" data-target="#chicken-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f635.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Excited</h4>
-                                              <a href="#" data-toggle="modal" data-target="#fish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f606.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                              <h4>Stressed</h4>
-                                              <a href="#" data-toggle="modal" data-target="#dessert-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f613.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Flirty</h4>
-                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Sick</h4>
-                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Heart Broken</h4>
-                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                              <h4>Flush</h4>
-                                              <a href="#" data-toggle="modal" data-target="#flush-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Fed Up</h4>
-                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f611.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Tired</h4>
-                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f634.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Stoked</h4>
-                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                              <h4>Relaxed</h4>
-                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f60c.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                  </div>
-                                </div>
 <!-- Music Options -->
-                                <div class="tab-pane fade" id="tab3default" style="background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg")">
 
-                                  <div class="container" style="margin-left:-2%">
-
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Alternative/Indie</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh4.ggpht.com/7lh5zPSF20T3zE8W3ELoMFrVHLapdR_XiMXe7apQuZNfRrNKVicnF7DGXiZ-U3ZdAMtgba7Qanj2fQ=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Blues</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh6.ggpht.com/Jf7vGf9xBVIJvup64AU7ApAhfw0JKhuikImQMFpDqRTECENmwM0r-rNRXCjVhbD5lHU9H0BcLLNsrGk=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Rock</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh3.googleusercontent.com/mxU2OR4RBRB113Az-6a9CXNpl7tvr2_5LO44xEOyjnAMiRBAjul9ZdCzNdDUHHLgmMzi=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                            <h4>Country</h4>
-                                            <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh4.ggpht.com/TlhpPCfVWfFLDJ6ZF8hvnLTdJycsLpMM6Q7y1vADTYQ_mHCpHLaxpU9JVDWTK4Sq3K0uWg4dqOnz2w=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                            <h4>Dance/Electronic</h4>
-                                            <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh3.ggpht.com/smD5G5mt42xvurl7qZZMX_xnQ7LAKX3aOJEkmCkENwv9QkbLZYaz2ZreTdvZ-A1695HrVStGgBUY3MM=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Folk</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh5.ggpht.com/kBanypt9akUfrCIuOMvhwFrtmcUKc_vUA9g4uhqzA4LhrL7YIDd7iNJtt1hzl8h717hpdceJwTU9U7o=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Hip-Hop/Rap</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh5.ggpht.com/XfL-fYfTpMXw2b457cH2wZVAn67hvwN8LwKbjPmCSf4tvXGAxo2z8jFStRFKRv-VgLe1E7xxRiVZAw=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                            <h4>Jazz</h4>
-                                            <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh4.ggpht.com/I36MgE4JiRhaQ18Z7imT4QoTjNazB_r5HgDUBMGkq8BJlfTNIKut_nnXWO2qAbhrS24ifBSpDhcuFw=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                            <h4>Reggea</h4>
-                                            <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh5.ggpht.com/KBTXs4f0IuidGWt6TWjxIElEmg1Q3xqCfpXSO2ZKrxB_606NO6YA17NPJ28ynsTvwykGnZ6eGuMwIw=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Metal</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh3.ggpht.com/EQ_oF5P3zZJ45jqZXNVzQ-wVb338-KPNp8U-9qEHTcOIbtC3QPcL_Bbjukh0ZwC8UWuOd2GGxXLBJw=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Pop</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh3.googleusercontent.com/4TKH_aqe-nUtyk4T_ZZ_DV9ap0dj07bAzSrDlKwtj8W69CBYNjVXYY6gjznKYwqIXf9GXQ=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                            <h4>R&B/Soul</h4>
-                                            <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://lh3.googleusercontent.com/Q38RoYUeZTeOeumPlYVJaOXlRxgR6xNLWftKX7rLuw-R1mt7lJv4cKFWRtL36J1tz5rJDQ=s224-c-e100-nu" height="100" width="100"class="img-responsive img-circle" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                  </div>
-                                </div>
 <!-- Food Options -->
-                                <div class="tab-pane fade" id="tab4default">
-                                  <div class="container" style="margin-left:-5%">
 
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Beef</h4>
-                                              <a href="#" data-toggle="modal" data-target="#beef-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Chicken</h4>
-                                              <a href="#" data-toggle="modal" data-target="#chicken-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Fish</h4>
-                                              <a href="#" data-toggle="modal" data-target="#fish-modal"><img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                              <h4>Dessert</h4>
-                                              <a href="#" data-toggle="modal" data-target="#dessert-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                      <div class="row wow fadeInUp" data-wow-delay=".3s">
-                                          <div class="col-lg-3">
-                                              <h4>Shellfish</h4>
-                                              <a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-chicken"></span>
-                                              <h4>Cheese</h4>
-                                              <a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-                                          </div>
-                                          <div class="col-lg-3">
-                                              <span class="icon-fish"></span>
-                                              <h4>Bread</h4>
-                                              <a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                          <div class="col-lg-3">
-
-                                              <h4>Vegetables</h4>
-                                              <a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></a>
-
-                                          </div>
-                                      </div>
-                                  </div>
-                                </div>
 <!-- Weather Options -->
                                 <div class="tab-pane fade" id="tab5default">
                                   <div id="weather"></div>
                                   <p style="color:black">Temp: <span id="temp" style="color:black"></span></p>
                                   <p style="color:black">Weather: <span id="wind" style="color:black"></span></p>
                             </div>
+                            <div class="tab-pane fade" id="tab6default">
+                              <div id="test"></div>
+
+                              <div class="columns">
+                               <div class="column"style="margin-top:1%"><h4>Happy</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/263a.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%" class="img-responsive"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Hungover</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f635.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Excited</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f606.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Stressed</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f613.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                              </div>
+                              <div class="columns">
+                               <div class="column"style="margin-top:1%"><h4>Flirty</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Sick</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Heart Broken</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Flush</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                              </div>
+                              <div class="columns" >
+                               <div class="column"style="margin-top:1%"><h4>Fed Up</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f611.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Tired</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f634.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Stoked</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                               <div class="column"style="margin-top:1%"><h4>Relaxed</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f60c.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab7default">
+                          <div id="music"></div>
+
+                          <div class="columns">
+                           <div class="column"style="margin-top:1%"><h4>Alternative/Indie</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh4.ggpht.com/7lh5zPSF20T3zE8W3ELoMFrVHLapdR_XiMXe7apQuZNfRrNKVicnF7DGXiZ-U3ZdAMtgba7Qanj2fQ=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Blues</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh6.ggpht.com/Jf7vGf9xBVIJvup64AU7ApAhfw0JKhuikImQMFpDqRTECENmwM0r-rNRXCjVhbD5lHU9H0BcLLNsrGk=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Rock</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh3.googleusercontent.com/mxU2OR4RBRB113Az-6a9CXNpl7tvr2_5LO44xEOyjnAMiRBAjul9ZdCzNdDUHHLgmMzi=s224-c-e100-nu" height="100" width="100"class="img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Country</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh4.ggpht.com/TlhpPCfVWfFLDJ6ZF8hvnLTdJycsLpMM6Q7y1vADTYQ_mHCpHLaxpU9JVDWTK4Sq3K0uWg4dqOnz2w=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                          </div>
+                          <div class="columns">
+                           <div class="column"style="margin-top:1%"><h4>Dance/Electronic</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh3.ggpht.com/smD5G5mt42xvurl7qZZMX_xnQ7LAKX3aOJEkmCkENwv9QkbLZYaz2ZreTdvZ-A1695HrVStGgBUY3MM=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Folk</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh5.ggpht.com/kBanypt9akUfrCIuOMvhwFrtmcUKc_vUA9g4uhqzA4LhrL7YIDd7iNJtt1hzl8h717hpdceJwTU9U7o=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Hip-Hop/Rap</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh5.ggpht.com/XfL-fYfTpMXw2b457cH2wZVAn67hvwN8LwKbjPmCSf4tvXGAxo2z8jFStRFKRv-VgLe1E7xxRiVZAw=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Jazz</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh4.ggpht.com/I36MgE4JiRhaQ18Z7imT4QoTjNazB_r5HgDUBMGkq8BJlfTNIKut_nnXWO2qAbhrS24ifBSpDhcuFw=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                          </div>
+                          <div class="columns" >
+                           <div class="column"style="margin-top:1%"><h4>Reggea</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh5.ggpht.com/KBTXs4f0IuidGWt6TWjxIElEmg1Q3xqCfpXSO2ZKrxB_606NO6YA17NPJ28ynsTvwykGnZ6eGuMwIw=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Metal</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh3.ggpht.com/EQ_oF5P3zZJ45jqZXNVzQ-wVb338-KPNp8U-9qEHTcOIbtC3QPcL_Bbjukh0ZwC8UWuOd2GGxXLBJw=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>Pop</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh3.googleusercontent.com/4TKH_aqe-nUtyk4T_ZZ_DV9ap0dj07bAzSrDlKwtj8W69CBYNjVXYY6gjznKYwqIXf9GXQ=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                           <div class="column"style="margin-top:1%"><h4>R&B/Soul</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://lh3.googleusercontent.com/Q38RoYUeZTeOeumPlYVJaOXlRxgR6xNLWftKX7rLuw-R1mt7lJv4cKFWRtL36J1tz5rJDQ=s224-c-e100-nu" height="100" width="100"class=" img-circle" alt="6"></div></a>
+                          </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab8default">
+                      <div id="test"></div>
+
+                      <div class="columns">
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/134420-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%" class="img-responsive"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/33759-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://img.over-blog-kiwi.com/1/72/95/42/20151010/ob_f149bf_fish-icon.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/4558-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                      </div>
+                      <div class="columns">
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/13507-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://plainicon.com/dboard/userprod/2921_4eb4c/prod_thumb/plainicon.com-64099-512px-92a.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://fieldofgreenspc.com/assets/img/bread.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                       <div class="column"style="margin-top:1%"><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/62621-200.png" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a>
+                      </div>
+
+                </div>
                         </div>
                     </div>
                 </div>
