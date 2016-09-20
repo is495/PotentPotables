@@ -3,284 +3,39 @@
 
 <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <!-- Title -->
-    <title>Potent Potables</title>
+<title>B.A.R.T.E.N.D.E.R.</title>
 <!-- Meta Data -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
 
     <!-- Bootstrap Css -->
-    <link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Style -->
-    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
-    <link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
-    <link href="plugins/animate.css/animate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+<link href="plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+<link href="plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+<link href="plugins/Icons/et-line-font/style.css" rel="stylesheet">
+<link href="plugins/animate.css/animate.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/misc.css" rel="stylesheet">
 
+<link href="css/demo4b.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Icons Font -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<script>
-
-
-</script>
-
-<script>
-
-</script>
-    <!-- Geolocation Function + BarMap -->
-    <script>
-        window.onload = function(){
-            navigator.geolocation.getCurrentPosition(success);
-
-            function success(position) {
-                var b = position.coords.latitude;
-                var a = position.coords.longitude;
-                var link = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d49243.88618515856!2d"+a+"!3d"+b+"!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbars!5e0!3m2!1sen!2sus!4v1472760469096"
-                var iframe = document.createElement('iframe');
-                iframe.frameBorder=0;
-                iframe.width="100%";
-                iframe.height="475px";
-                iframe.id="randomid";
-                iframe.setAttribute("src", link);
-                document.getElementById("maps").appendChild(iframe);
-            }
-
-        }
-    </script>
-    <!-- Various Styles -->
-    <style>
-
-
-    .first {
-      background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('https://s-media-cache-ak0.pinimg.com/originals/dd/9a/2e/dd9a2e1567e388c36c10682de9b60597.jpg');
-}
-.second {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('https://images4.alphacoders.com/268/268154.jpg');
-}
-.third {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('http://img.wallpaperfolder.com/f/4CC5E6691E99/vegetables-food-fast-11508.jpg');
-}
-.fourth {
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ));
-}
-
-
-#exTab1 .tab-content {
-  color : red;
-  background-image: url("http://www.lioncloud.co/wp-content/uploads/2016/08/unique-decoration-dark-wood-walls-wallpapers-black-wood-wall.jpg");
-  padding : 5px 15px;
-}
-
-#exTab2 h3 {
-  color : red;
-  background-image: url("http://www.lioncloud.co/wp-content/uploads/2016/08/unique-decoration-dark-wood-walls-wallpapers-black-wood-wall.jpg");
-  padding : 5px 15px;
-}
-
-/* remove border radius for the tab */
-
-#exTab1 .nav-pills > li > a {
-  border-radius: 0;
-}
-
-/* change border radius for the tab , apply corners on top*/
-
-#exTab3 .nav-pills > li > a {
-  border-radius: 4px 4px 0 0 ;
-}
-
-#exTab3 .tab-content {
-  color : white;
-  background-image: url("https://www.walldevil.com/wallpapers/a21/background-wood-pictures-images-mrichardson-image-theme.jpg");
-  padding : 5px 15px;
-}
-
-.modalDialog {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 1px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-}
-.filter {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
-}
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
-    background: #00d9ff;
-}
-.loginmodal-container {
-  padding: 30px;
-  max-width: 75%;
-  width: 100% !important;
-  opacity:1;
-  background-color: black;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  font-family: roboto;
-}
-
-.loginmodal-container h1 {
-  text-align: center;
-  font-size: 1.8em;
-  font-family: roboto;
-}
-
-.loginmodal-container input[type=submit] {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.loginmodal-container input[type=text], input[type=password] {
-  height: 44px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
-}
-
-.loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-family: roboto;
-  font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-}
-
-.loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-}
-
-.loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-}
-.containerdiv {
-  border: 0;
-  float: left;
-  position: relative;
-}
-.cornerimage {
-  border: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  visibility: hidden;
- }
-.login-help{
-  font-size: 12px;
-}
-.all{
-  visibility: visible;
-}
-.some{
-visibility: visible;
-}
-.none{
-visibility: visible;
-}
-.red { color: red }
-.green { color: green }
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Jquery SRC -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <!-- MultiSelect Function -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
       $(function () {
           function moveItems(origin, dest) {
               $(origin).find(':selected').appendTo(dest);
@@ -306,49 +61,13 @@ visibility: visible;
               moveAllItems('#sbOne', '#sbTwo');
           });
       });
-  </script>
-  <!-- Multi Select Function Style -->
-<style>
-.switch {
-  background: black;
-  background-image: -webkit-linear-gradient(top, black, grey);
-  background-image: -moz-linear-gradient(top, black, grey);
-  background-image: -ms-linear-gradient(top, black, grey);
-  background-image: -o-linear-gradient(top, black, grey);
-  background-image: linear-gradient(to bottom, black, grey);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
+  </script> -->
 
-.switch:hover {
-  background: grey;
-  background-image: -webkit-linear-gradient(top, grey, black);
-  background-image: -moz-linear-gradient(top, grey, black);
-  background-image: -ms-linear-gradient(top, grey, black);
-  background-image: -o-linear-gradient(top, grey, black);
-  background-image: linear-gradient(to bottom, grey, black);
-  text-decoration: none;
-}
-.selext{
-
-  border-radius: 4px 4px 4px 4px;
-  -moz-border-radius: 4px 4px 4px 4px;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  border: 3px solid #24242A;
-}
-</style>
 </head>
-
 <body>
     <!-- Preloader
 	============================================= -->
-    <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
+<div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
     <!-- Header
 	============================================= -->
   <!-- Header and Nav -->
@@ -380,11 +99,11 @@ visibility: visible;
         </nav>
 
         <!-- Carousel -->
-        <div id="owl-hero" class="owl-carousel owl-theme">
+        <div id="owl-hero" class="owl-carousel owl-theme" style="margin-bottom:-10px">
             <div class="item first" >
                 <div class="caption">
                     <h6>Expand Your Palate</h6>
-                    <h1>Potent Potables</h1>
+                    <h1>BARTENDER</h1>
                     <a class="btn btn-transparent" href="#">Explore</a>
                 </div>
             </div>
@@ -405,25 +124,16 @@ visibility: visible;
         </div>
     </section>
 
-    <!-- Welcome
-	============================================= -->
-    <section id="welcome" >
-        <div class="container">
-            <h2>Welcome To <span>Potent Potables</span></h2>
-            <hr class="sep">
-            <img class="img-responsive center-block wow fadeInUp" data-wow-delay=".3s" src="http://www.agrion.org/soireeEnergie/img/cocktail.png" alt="logo" height="200" width="200">
 
-            <p>Our goal is to help you learn to appreciate the finer points of drinking. We'll let you know what you can make with what you've got, teach you a thing or two about the classics, share some simple pairings, and introduce you to a few of your area's finest pubs. </p>
-        </div>
-
-    </section>
 
     <!-- Bartender
 	============================================= -->
-    <section id="services">
+    <section id="services" style="margin-top:0px">
         <div class="container">
-            <h2>BARTENDER</h2>
+          <h2>Welcome To <span>BARTENDER</span></h2>
+
             <hr class="light-sep">
+
             <p class="newclass">Our state of the art Basic Alcohol Research Tool for Experiencing New Drinks and Enjoying Responsibly (BARTENDER for short) will help you find the perfect drink. Whether you want to make something with what you've got on hand, pair a spirit with your spirits, match it to some music, wine and dine, or wet your whistle with the weather, the BARTENDER has you covered.</p>
         </div>
         <div class="container">
@@ -449,7 +159,7 @@ visibility: visible;
 <!-- Ingredients Options -->
                                 <div class="tab-pane fade in active"  id="tab1default">
 
-                                  <select class="selext"style="width:30%;height:300px;background-color:#CDCDCD;" id="sbOne" multiple="multiple">
+                                  <!-- <select class="selext"style="width:30%;height:300px;background-color:#CDCDCD;" id="sbOne" multiple="multiple">
         <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Ingredients</option>
         <option value="vodka">Vodka</option>
         <option value="vermouth">Vermouth</option>
@@ -463,21 +173,44 @@ visibility: visible;
         <option value="whiskey">Whiskey</option>
 
 
-    </select>
-    <span style="display: inline-block; width: 70px; vertical-align: top;margin-top:5%">
+    </select> -->
+    <!-- <span style="display: inline-block; width: 70px; vertical-align: top;margin-top:5%">
       <input type="button" class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="left" value=" -" />
       <input type="button"class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="right" value="+" />
       <input onclick="myFunction()"  type="button"class="btn btn-transparent" style="color:black;border-color:black;margin-bottom:25%;width:30px"id="calc" value="=" />
-<!-- <a href="#contact" class="page-scroll">Bars</a> -->
         </span>
 
 
     <select  class="selext"style="width:30%;height:300px;background-color:#CDCDCD"id="sbTwo" multiple="multiple">
 
-    </select>
+    </select> -->
 
+    <div class="container">
+<div class="column-center">    <img onclick="myFunction()" class="img-responsive tilt pic center-block wow fadeInUp" data-wow-delay=".3s" src="http://www.agrion.org/soireeEnergie/img/cocktail.png" alt="logo" height="100" width="100"style="margin-left:100px;margin-top:100px">
+</div>
+<div class="column-left">    <ol data-draggable="target" style="height:300px;width:400px;margin-left:50px" >
+      <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Ingredients</option>
+      <option data-draggable="item" value="vodka">Vodka</option>
+      <option data-draggable="item" value="vermouth">Vermouth</option>
+      <option data-draggable="item" value="olives">Olives</option>
+      <option data-draggable="item" value="bourbon">Bourbon</option>
+      <option data-draggable="item" value="bitters">Bitters</option>
+      <option data-draggable="item"value="sugar">Sugar Cubes</option>
+      <option data-draggable="item"value="rind">Citrus Rind</option>
+      <option data-draggable="item"value="water">Water</option>
+      <option data-draggable="item"value="cherries">Cherries</option>
+      <option data-draggable="item"value="whiskey">Whiskey</option>
+    </ol></div>
+<div class="column-right">  <ol  id= "test" data-draggable="target" style="height:300px;width:400px;margin-left:-150px">
+
+  </ol></div>
+</div>
     <br />
+    <div style="margin-left:13%;" >
 
+
+
+</div>
 
 
 
@@ -693,8 +426,9 @@ visibility: visible;
                                 </div>
 <!-- Weather Options -->
                                 <div class="tab-pane fade" id="tab5default">
-                                  <!-- weather widget start --><a href="//www.booked.net/weather/sparks-w677561"><img src="//w.bookcdn.com/weather/picture/26_w677561_0_1_34495e_250_2c3e50_ffffff_ffffff_1_2071c9_ffffff_0_3.png?scode=124&domid=w209" /></a><!-- weather widget end --></div>
-
+                                  <div id="weather"></div>
+                                  <p style="color:black">Temp: <span id="temp" style="color:black"></span></p>
+                                  <p style="color:black">Weather: <span id="wind" style="color:black"></span></p>
                             </div>
                         </div>
                     </div>
@@ -716,7 +450,7 @@ visibility: visible;
             <p>Learn them. Make them. Drink them.</p>
             <div class="row">
                 <div class=" containerdiv col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a class="portfolio-box" href="img/portfolio/1.jpg" data-lightbox="image-1" data-title="Your caption">
+                    <a class="portfolio-box" >
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/kettel-one-vodka-martini.jpg" class="img-responsive" alt="1">
 <div class="cornerimage">
   <img class="martini-all " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
@@ -745,7 +479,7 @@ visibility: visible;
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/2.jpg" class="portfolio-box" data-lightbox="image-2" data-title="Your caption">
+                    <a  class="portfolio-box" >
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/09/bourbon-old-fashioned.jpg" class="img-responsive" alt="2">
                         <div class="cornerimage">
                           <img class="old-all " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
@@ -776,7 +510,7 @@ visibility: visible;
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a href="img/portfolio/3.jpg" class="portfolio-box" data-lightbox="image-3" data-title="Your caption">
+                    <a class="portfolio-box" >
                         <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2010/01/manhattan1.jpg" class="img-responsive" alt="3">
                         <div class="cornerimage">
                           <img class="man-all " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
@@ -1349,7 +1083,7 @@ visibility: visible;
 	============================================= -->
     <footer>
         <div class="container">
-            <h1>Potent Potables</h1>
+            <h1>B.A.R.T.E.N.D.E.R</h1>
 
             <h6>&copy; 2016 Team 3</h6>
         </div>
@@ -1359,8 +1093,11 @@ visibility: visible;
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-assets/js/bootstrap.min.js"></script>
     <script src="bootstrap-assets/js/cocktails.js"></script>
+    <script src="bootstrap-assets/js/weather.js"></script>
+    <script src="bootstrap-assets/js/map.js"></script>
 
     <script src="js/custom.js"></script>
+    <script src="js/demo4b.js"></script>
     <!-- JS PLUGINS -->
     <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
