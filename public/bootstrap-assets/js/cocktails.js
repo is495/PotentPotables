@@ -16,7 +16,7 @@ function myFunction() {
   // var ingredients= $('#sbTwo').val();
   var test= $("#test").text();
   // alert(test);
-  var si = test.includes("Vodka");
+  var si = test.includes("vodka");
 // alert('here')
   //  var n = ingredients.includes("vodka");
 
