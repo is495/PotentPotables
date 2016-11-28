@@ -732,71 +732,6 @@ $( ".man-none" ).addClass(function( index ) {
 });
 }
 //Bloody Mary end
-//Daquiri start
-var n = test.includes("White Rum");
-var v = test.includes("Lemon");
-var s = test.includes("Lime Juice");
-var r = test.includes("Simple Syrup");
-
-if ((n==true) && (v==true) && (s==true) && (r==true)) {
-  $( ".daq-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if ((n==true)){
-$( ".daq-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".daq-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Daquiri end
-//Rum and Cola start
-var n = test.includes("White Rum");
-var v = test.includes("Lime");
-var s = test.includes("Cola");
-var r = test.includes("Lime Juice");
-
-if ((n==true) && (v==true) && (s==true) && (r==true)){
-  $( ".rum-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if (n==true){
-$( ".rum-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".rum-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Rum and Cola end
-//Redbull Vodka start
-var n = test.includes("Vodka");
-var v = test.includes("Redbull");
-
-if ((n==true) && (v==true)){
-  $( ".red-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if (n==true){
-$( ".red-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".red-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Redbull Vokda end
-
 // AMF start
 var n = test.includes("Blue Curacao");
 var v = test.includes("Gin");
@@ -823,63 +758,29 @@ $( ".amf-none" ).addClass(function( index ) {
 });
 }
 //AMF end
-
-// martini start
-var n = test.includes("Gin");
-var v = test.includes("Vermouth");
-if ((n==true) && (v==true)) {
-  $( ".martini-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else {
-$( ".martini-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-// martini end
-//Screw Driver start
-var n = test.includes("Vodka");
-var v = test.includes("Orange Slice");
-var s = test.includes("Orange Juice");
-
-if ((n==true) && (v==true) && (s==true)){
-  $( ".scr-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if (n==true){
-$( ".scr-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".scr-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Screw Driver end
-//Hot Toddy start
-var n = test.includes("Bourbon");
+//Daquiri start
+var n = test.includes("White Rum");
 var v = test.includes("Lemon");
-var s = test.includes("Lemon Juice");
+var s = test.includes("Lime Juice");
+var r = test.includes("Simple Syrup");
 
-if ((n==true) && (v==true) && (s==true)){
-  $( ".hot-all" ).addClass(function( index ) {
+if ((n==true) && (v==true) && (s==true) && (r==true)) {
+  $( ".daq-all" ).addClass(function( index ) {
     return "all" ;
   });
 }
-else if ((n==true)) {
-$( ".hot-some" ).addClass(function( index ) {
+else if ((n==true)){
+$( ".daq-some" ).addClass(function( index ) {
   return "some" ;
 });
 }
 else {
-$( ".hot-none" ).addClass(function( index ) {
+$( ".daq-none" ).addClass(function( index ) {
   return "none" ;
 });
 }
-//Hot Toddy end
+//Daquiri end
+
 //Holiday Nog start
 var n = test.includes("Peppermint Schnapps");
 var v = test.includes("Nutmeg");
@@ -902,98 +803,50 @@ $( ".nog-none" ).addClass(function( index ) {
 }
 //Holiday Nog end
 
-//Whiskey & Cola start
-var n = test.includes("Whiskey");
-var v = test.includes("Cola");
-
-if ((n==true) && (v==true)) {
-  $( ".wic-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if (n==true){
-$( ".wic-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".wic-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Whiskey & Cola end
-//Margarita start
-var n = test.includes("Tequila");
+//Gin & Tonic start
+var n = test.includes("Gin");
 var v = test.includes("Lime");
-var s = test.includes("Lime Juice");
-var r = test.includes("Sweet and Sour");
+var s = test.includes("Tonic Water");
 
-if ((n==true) && (v==true) && (s==true) && (r==true)){
-  $( ".marg-all" ).addClass(function( index ) {
+if ((n==true) && (v==true) && (s==true)){
+  $( ".gat-all" ).addClass(function( index ) {
     return "all" ;
   });
 }
 else if ((n==true)){
-$( ".marg-some" ).addClass(function( index ) {
+$( ".gat-some" ).addClass(function( index ) {
   return "some" ;
 });
 }
 else {
-$( ".marg-none" ).addClass(function( index ) {
+$( ".gat-none" ).addClass(function( index ) {
   return "none" ;
 });
 }
-//Margarita end
-//Bloody Mary start
-var n = test.includes("Vodka");
-var v = test.includes("Celery");
-var s = test.includes("Lemon");
-var r = test.includes("Black Pepper");
-var t = test.includes("Grated Horseradish");
-var u = test.includes("Lemon Juice");
-var p = test.includes("Salt");
-var l = test.includes("Tomato Juice");
-var b = test.includes("Worcestershire Sauce")
+//Gin & Tonic end
 
-if ((n==true) && (v==true) && (s==true)&& (r==true) && (t==true) && (u==true) && (p==true) && (l==true) && (b==true)){
-  $( ".man-all" ).addClass(function( index ) {
+//Hot Toddy start
+var n = test.includes("Bourbon");
+var v = test.includes("Lemon");
+var s = test.includes("Lemon Juice");
+
+if ((n==true) && (v==true) && (s==true)){
+  $( ".hot-all" ).addClass(function( index ) {
     return "all" ;
   });
 }
-else if ((n==true)){
-$( ".man-some" ).addClass(function( index ) {
+else if ((n==true)) {
+$( ".hot-some" ).addClass(function( index ) {
   return "some" ;
 });
 }
 else {
-$( ".man-none" ).addClass(function( index ) {
+$( ".hot-none" ).addClass(function( index ) {
   return "none" ;
 });
 }
-//Bloody Mary end
-//Mojito start
-var n = test.includes("Light Rum");
-var v = test.includes("Mint Leaves");
-var s = test.includes("Club Soda");
-var r = test.includes("Lime Juice");
-var u = test.includes("Simple Syrup");
+//Hot Toddy end
 
-if ((n==true) && (v==true) && (s==true) && (r==true)  && (u==true)){
-  $( ".moj-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if ((n==true)){
-$( ".moj-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".moj-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Mojito end
 //Lemon Drop start
 var n = test.includes("Triple Sec");
 var v = test.includes("Vodka");
@@ -1016,6 +869,185 @@ $( ".drop-none" ).addClass(function( index ) {
 });
 }
 //Lemon Drop end
+//Margarita start
+var n = test.includes("Tequila");
+var v = test.includes("Lime");
+var s = test.includes("Lime Juice");
+var r = test.includes("Sweet and Sour");
+
+if ((n==true) && (v==true) && (s==true) && (r==true)){
+  $( ".marg-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if ((n==true)){
+$( ".marg-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".marg-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Margarita end
+
+//Mojito start
+var n = test.includes("Light Rum");
+var v = test.includes("Mint");
+var s = test.includes("Club Soda");
+var r = test.includes("Lime Juice");
+var t = test.includes("Mint Juice");
+var u = test.includes("Simple Syrup");
+
+if ((n==true) && (v==true) && (s==true) && (r==true) && (t==true) && (u==true)){
+  $( ".moj-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if ((n==true)){
+$( ".moj-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".moj-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Mojito end
+//Rum and Cola start
+var n = test.includes("White Rum");
+var v = test.includes("Lime");
+var s = test.includes("Cola");
+var r = test.includes("Lime Juice");
+
+if ((n==true) && (v==true) && (s==true) && (r==true)){
+  $( ".rum-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if (n==true){
+$( ".rum-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".rum-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Rum and Cola end
+
+//Redbull Vodka start
+var n = test.includes("Vodka");
+var v = test.includes("Redbull");
+
+if ((n==true) && (v==true)){
+  $( ".red-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if (n==true){
+$( ".red-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".red-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Redbull Vokda end
+
+//Screw Driver start
+var n = test.includes("Vodka");
+var v = test.includes("Orange Slice");
+var s = test.includes("Orange Juice");
+
+if ((n==true) && (v==true) && (s==true)){
+  $( ".scr-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if (n==true){
+$( ".scr-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".scr-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Screw Driver end
+
+//Whiskey & Cola start
+var n = test.includes("Whiskey");
+var v = test.includes("Cola");
+
+if ((n==true) && (v==true)) {
+  $( ".wic-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if (n==true){
+$( ".wic-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".wic-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Whiskey & Cola end
+
+//Whiskey Sour start
+var n = test.includes("Whiskey");
+var v = test.includes("Lemon Twist");
+var s = test.includes("Maraschino Cherry");
+var r = test.includes("Lemon Juice");
+var t = test.includes("Simple Syrup");
+
+if ((n==true) && (v==true) && (s==true) && (r==true) && (t==true)){
+  $( ".sour-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if (n==true){
+$( ".sour-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".sour-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Whiskey Sour end
+//Moscow Mule start
+var n = test.includes("Vodka");
+var v = test.includes("Lime");
+var s = test.includes("Ginger Beer");
+var r = test.includes("Lime Juice");
+
+if ((n==true) && (v==true) && (s==true)&& (r==true)){
+  $( ".cow-all" ).addClass(function( index ) {
+    return "all" ;
+  });
+}
+else if ((n==true)){
+$( ".cow-some" ).addClass(function( index ) {
+  return "some" ;
+});
+}
+else {
+$( ".cow-none" ).addClass(function( index ) {
+  return "none" ;
+});
+}
+//Moscow Mule end
 //Long Island Ice Tea start
 var n = test.includes("Gin");
 var v = test.includes("Rum");
@@ -1042,72 +1074,22 @@ $( ".lat-none" ).addClass(function( index ) {
 });
 }
 //Long Island Ice Tea end
-//Whiskey Sour start
-var n = test.includes("Whiskey");
-var v = test.includes("Lemon Twist");
-var s = test.includes("Maraschino Cherry");
-var r = test.includes("Lemon Juice");
-var t = test.includes("Simple Syrup");
-
-if ((n==true) && (v==true) && (s==true) && (r==true) && (t==true)){
-  $( ".sour-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if (n==true){
-$( ".sour-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".sour-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Whiskey Sour end
-//Gin & Tonic start
+// martini start
 var n = test.includes("Gin");
-var v = test.includes("Lime");
-var s = test.includes("Tonic Water");
-
-if ((n==true) && (v==true) && (s==true)){
-  $( ".gat-all" ).addClass(function( index ) {
+var v = test.includes("Vermouth");
+if ((n==true) && (v==true)) {
+  $( ".martini-all" ).addClass(function( index ) {
     return "all" ;
   });
 }
-else if ((n==true)){
-$( ".gat-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
 else {
-$( ".gat-none" ).addClass(function( index ) {
+$( ".martini-none" ).addClass(function( index ) {
   return "none" ;
 });
 }
-//Gin & Tonic end
-//Moscow Mule start
-var n = test.includes("Vodka");
-var v = test.includes("Lime");
-var s = test.includes("Ginger Beer");
-var r = test.includes("Lime Juice");
 
-if ((n==true) && (v==true) && (s==true)&& (r==true)){
-  $( ".cow-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if ((n==true)){
-$( ".cow-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".cow-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Moscow Mule end
+
+// martini end
 // martini start
 
 // martini end
