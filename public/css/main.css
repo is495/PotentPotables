@@ -471,6 +471,9 @@ Portfolio Style
 #portfolio .portfolio-box:hover  .portfolio-box-caption {
   opacity: 1;
 }
+#portfolio .portfolio-box:active  .portfolio-box-caption {
+  opacity: 1;
+}
 
     /* ==========================================================================
 Work Process Style
