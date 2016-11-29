@@ -14,18 +14,6 @@
 <meta name="author" content="">
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  if(window.innerWidth > 375) {
-      $( ".mobar" ).remove();
-  }
-  else {
-    $( ".dtop" ).remove();
-}
-
-})
-
-</script>
 <!-- <script>
 $(document).ready(function(){
     $("#one").click(function(){
@@ -1051,7 +1039,33 @@ h4 a{
 <li><button id="wat"style="background:none;border:none"class="delete">Water</button></li>
 <li><button id="wor"style="background:none;border:none"class="delete">Worcestershire Sauce</button></li>
 </ul>
+  <option id="apc"value="apc">Apple Cider</option>
+  <option id="bit"value="bit">Bitters</option>
+  <option id="bpe"value="bpe">Black Pepper</option>
+  <option id="cso"value="cso">Club Soda</option>
+  <option id="col"value="col">Cola</option>
+  <option id="egn"value="egn">Eggnog</option>
+  <option id="gnb"value="gnb">Ginger Beer</option>
+  <option id="ghr"value="ghr">Grated Horseradish</option>
+  <option id="hon"value="hon">Honey</option>
+  <option id="hts"value="hts">Hot Sauce</option>
+  <option id="lmj"value="lmj">Lemon Juice</option>
+  <option id="lls"value="lls">Lemon Lime Soda</option>
+  <option id="lim"value="lim">Lime Juice</option>
+  <option id="mil"value="mil">Milk</option>
+  <option id="min"value="min">Mint Leaves</option>
+  <option id="ogj"value="ogj">Orange Juice</option>
 
+  <option id="pmp"value="pmp">Pumpkin Puree</option>
+  <option id="rbl"value="rbl">Red Bull</option>
+  <option id="sal"value="sal">Salt</option>
+  <option id="ssp"value="ssp">Simple Syrup</option>
+  <option id="scb"value="scb">Sugar Cube</option>
+  <option id="sas"value="sas">Sweet and Sour</option>
+  <option id="tom"value="tom">Tomato Juice</option>
+  <option id="ton"value="ton">Tonic Water</option>
+  <option id="wat"value="wat">Water</option>
+  <option id="wor"value="wor">Worcestershire Sauce</option>
 </div>
 </div>
 <div class="block">
@@ -1074,6 +1088,19 @@ h4 a{
 <li><button id="cin"style="background:none;border:none"class="delete">Cinnamon</button></li>
 </ul>
 
+  <option id="apl"value="apl">Apple</option>
+  <option id="cel"value="cel">Celery</option>
+  <option id="lem"value="lem">Lemon</option>
+  <option id="les"value="les">Lemon Slice</option>
+  <option id="let"value="let">Lemon Twist</option>
+  <option id="lme"value="lme">Lime</option>
+  <option id="mac"value="mac">Maraschino Cherry</option>
+  <option id="mit"value="mit">Mint</option>
+  <option id="nut"value="nut">Nutmeg</option>
+  <option id="oli"value="oli">Olives</option>
+  <option id="osl"value="osl">Orange Slice</option>
+  <option id="sgr"value="sgr">Sugar Rim</option>
+  <option id="cin"value="cin">Cinnamon</option>
 
 </div>
 </div>
@@ -1164,6 +1191,7 @@ h4 a{
 
 
 
+rt
         <div class="container dtop">
 
             <div class="row" style="width:100%">
@@ -1223,78 +1251,74 @@ h4 a{
   <input type="radio" name="city" id="cityA" checked />
   <label for="cityA"><span>Liquor</span></label>
   <div class="info" style="    overflow-y:scroll;">
-    <ul style="list-style: none;margin-left:-55px">
-  <li><button id="vod"style="background:none;border:none"class="delete">Vodka</button></li>
-  <li><button id="ver"style="background:none;border:none"class="delete">Vermouth</button></li>
-  <li><button id="blc"style="background:none;border:none"class="delete">Blue Curacao</button></li>
-  <li><button id="brb"style="background:none;border:none"class="delete">Bourbon</button></li>
-  <li><button id="chm"style="background:none;border:none"class="delete">Champagne</button></li>
-  <li><button id="cdc"style="background:none;border:none"class="delete">Creme De Cacao</button></li>
-  <li><button id="gin"style="background:none;border:none"class="delete">Gin</button></li>
-  <li><button id="lir"style="background:none;border:none"class="delete">Light Rum</button></li>
-  <li><button id="pps"style="background:none;border:none"class="delete">Peppermint Schnapps</button></li>
-  <li><button id="rum"style="background:none;border:none"class="delete">Rum</button></li>
-  <li><button id="teq"style="background:none;border:none"class="delete">Tequila</button></li>
-  <li><button id="tps"style="background:none;border:none"class="delete">Triple Sec</button></li>
-  <li><button id="vav"style="background:none;border:none"class="delete">Vanilla Vodka</button></li>
-  <li><button id="wsk"style="background:none;border:none"class="delete">Whiskey</button></li>
-  <li><button id="wir"style="background:none;border:none"class="delete">White Rum</button></li>
-  </ul>
+
+          <option id="vod"value="vod">Vodka</option>
+          <option id="ver"value="ver">Vermouth</option>
+          <option id="blc"value="blc">Blue Curacao</option>
+          <option id="brb"value="brb">Bourbon</option>
+          <option id="chm"value="chm">Champagne</option>
+          <option id="cdc"value="cdc">Creme De Cacao</option>
+          <option id="gin"value="gin">Gin</option>
+          <option id="lir"value="lir">Light Rum</option>
+          <option id="pps"value="pps">Peppermint Schnapps</option>
+          <option id="rum"value="rum">Rum</option>
+          <option id="teq"value="teq">Tequila</option>
+          <option id="tps"value="tps">Triple Sec</option>
+          <option id="vav"value="vav">Vanilla Vodka</option>
+          <option id="wsk"value="wsk">Whiskey</option>
+          <option id="wir"value="wir">White Rum</option>
   </div>
 </div>
 <div class="block">
   <input type="radio" name="city" id="cityB"/>
   <label for="cityB"><span>Mixers</span></label>
   <div class="info" style="    overflow-y:scroll;">
-    <ul style="list-style: none;margin-left:-55px">
-  <li><button id="apc"style="background:none;border:none"class="delete">Apple Cider</button></li>
-  <li><button id="bit"style="background:none;border:none"class="delete">Bitters</button></li>
-  <li><button id="bpe"style="background:none;border:none"class="delete">Black Pepper</button></li>
-  <li><button id="cso"style="background:none;border:none"class="delete">Club Soda</button></li>
-  <li><button id="col"style="background:none;border:none"class="delete">Cola</button></li>
-  <li><button id="egn"style="background:none;border:none"class="delete">Eggnog</button></li>
-  <li><button id="gnb"style="background:none;border:none"class="delete">Ginger Beer</button></li>
-  <li><button id="ghr"style="background:none;border:none"class="delete">Grated Horseradish</button></li>
-  <li><button id="hon"style="background:none;border:none"class="delete">Honey</button></li>
-  <li><button id="hts"style="background:none;border:none"class="delete">Hot Sauce</button></li>
-  <li><button id="lmj"style="background:none;border:none"class="delete">Lemon Juice</button></li>
-  <li><button id="lls"style="background:none;border:none"class="delete">Lemon Lime Soda</button></li>
-  <li><button id="lim"style="background:none;border:none"class="delete">Lime Juice</button></li>
-  <li><button id="mil"style="background:none;border:none"class="delete">Milk</button></li>
-  <li><button id="min"style="background:none;border:none"class="delete">Mint Leaves</button></li>
-  <li><button id="ogj"style="background:none;border:none"class="delete">Orange Juice</button></li>
-  <li><button id="pmp"style="background:none;border:none"class="delete">Pumpkin Puree</button></li>
-  <li><button id="rbl"style="background:none;border:none"class="delete">Red Bull</button></li>
-  <li><button id="sal"style="background:none;border:none"class="delete">Salt</button></li>
-  <li><button id="ssp"style="background:none;border:none"class="delete">Simple Syrup</button></li>
-  <li><button id="scb"style="background:none;border:none"class="delete">Sugar Cube</button></li>
-  <li><button id="sas"style="background:none;border:none"class="delete">Sweet and Sour</button></li>
-  <li><button id="tom"style="background:none;border:none"class="delete">Tomato Juice</button></li>
-  <li><button id="ton"style="background:none;border:none"class="delete">Tonic Water</button></li>
-  <li><button id="wat"style="background:none;border:none"class="delete">Water</button></li>
-  <li><button id="wor"style="background:none;border:none"class="delete">Worcestershire Sauce</button></li>
-  </ul>
+    <option id="apc"value="apc">Apple Cider</option>
+    <option id="bit"value="bit">Bitters</option>
+    <option id="bpe"value="bpe">Black Pepper</option>
+    <option id="cso"value="cso">Club Soda</option>
+    <option id="col"value="col">Cola</option>
+    <option id="egn"value="egn">Eggnog</option>
+    <option id="gnb"value="gnb">Ginger Beer</option>
+    <option id="ghr"value="ghr">Grated Horseradish</option>
+    <option id="hon"value="hon">Honey</option>
+    <option id="hts"value="hts">Hot Sauce</option>
+    <option id="lmj"value="lmj">Lemon Juice</option>
+    <option id="lls"value="lls">Lemon Lime Soda</option>
+    <option id="lim"value="lim">Lime Juice</option>
+    <option id="mil"value="mil">Milk</option>
+    <option id="min"value="min">Mint Leaves</option>
+    <option id="ogj"value="ogj">Orange Juice</option>
+    <option id="pmp"value="pmp">Pumpkin Puree</option>
+    <option id="rbl"value="rbl">Red Bull</option>
+    <option id="sal"value="sal">Salt</option>
+    <option id="ssp"value="ssp">Simple Syrup</option>
+    <option id="scb"value="scb">Sugar Cube</option>
+    <option id="sas"value="sas">Sweet and Sour</option>
+    <option id="tom"value="tom">Tomato Juice</option>
+    <option id="ton"value="ton">Tonic Water</option>
+    <option id="wat"value="wat">Water</option>
+    <option id="wor"value="wor">Worcestershire Sauce</option>
   </div>
 </div>
 <div class="block">
   <input type="radio" name="city" id="cityC" />
   <label for="cityC"><span>Garnishes</span></label>
   <div class="info" style="    overflow-y:scroll;">
-    <ul style="list-style: none;margin-left:-55px">
-  <li><button id="apl"style="background:none;border:none"class="delete">Apple</button></li>
-  <li><button id="cel"style="background:none;border:none"class="delete">Celery</button></li>
-  <li><button id="lem"style="background:none;border:none"class="delete">Lemon</button></li>
-  <li><button id="les"style="background:none;border:none"class="delete">Lemon Slice</button></li>
-  <li><button id="let"style="background:none;border:none"class="delete">Lemon Twist</button></li>
-  <li><button id="lme"style="background:none;border:none"class="delete">Lime</button></li>
-  <li><button id="mac"style="background:none;border:none"class="delete">Maraschino Cherry</button></li>
-  <li><button id="mit"style="background:none;border:none"class="delete">Mint</button></li>
-  <li><button id="nut"style="background:none;border:none"class="delete">Nutmeg</button></li>
-  <li><button id="oli"style="background:none;border:none"class="delete">Olives</button></li>
-  <li><button id="osl"style="background:none;border:none"class="delete">Orange Slice</button></li>
-  <li><button id="sgr"style="background:none;border:none"class="delete">Sugar Rim</button></li>
-  <li><button id="cin"style="background:none;border:none"class="delete">Cinnamon</button></li>
-  </ul>
+
+    <option id="apl"value="apl">Apple</option>
+    <option id="cel"value="cel">Celery</option>
+    <option id="lem"value="lem">Lemon</option>
+    <option id="les"value="les">Lemon Slice</option>
+    <option id="let"value="let">Lemon Twist</option>
+    <option id="lme"value="lme">Lime</option>
+    <option id="mac"value="mac">Maraschino Cherry</option>
+    <option id="mit"value="mit">Mint</option>
+    <option id="nut"value="nut">Nutmeg</option>
+    <option id="oli"value="oli">Olives</option>
+    <option id="osl"value="osl">Orange Slice</option>
+    <option id="sgr"value="sgr">Sugar Rim</option>
+    <option id="cin"value="cin">Cinnamon</option>
 
   </div>
 </div></div>
