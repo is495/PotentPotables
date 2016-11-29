@@ -468,7 +468,7 @@ Portfolio Style
 #portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
 }
-#portfolio .portfolio-box:hover .portfolio-box-caption {
+#portfolio .portfolio-box:hover  .portfolio-box-caption {
   opacity: 1;
 }
 
