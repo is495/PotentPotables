@@ -453,6 +453,7 @@ Portfolio Style
   position: absolute;
   top: 50%;
   width: 100%;
+  opacity: 1;
   text-align: center;
   transform: translateY(-50%);
 }
@@ -474,7 +475,6 @@ Portfolio Style
 #portfolio .portfolio-box:active  .portfolio-box-caption {
   opacity: 1;
 }
-
     /* ==========================================================================
 Work Process Style
 ========================================================================== */

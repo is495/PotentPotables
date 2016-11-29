@@ -469,10 +469,12 @@ Portfolio Style
 #portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
 }
-#portfolio .portfolio-box:hover .portfolio-box:focus .portfolio-box-caption {
+#portfolio .portfolio-box:hover  .portfolio-box-caption {
   opacity: 1;
 }
-
+#portfolio .portfolio-box:active  .portfolio-box-caption {
+  opacity: 1;
+}
     /* ==========================================================================
 Work Process Style
 ========================================================================== */
