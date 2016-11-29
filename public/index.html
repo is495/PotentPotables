@@ -747,6 +747,19 @@ $('#test').on('click', '.delete', deletevod);
 
             }
         </script>
+        <style>
+        @media screen and (min-width: 479px) {
+            .mobar {
+                display:none
+            }
+        }
+        @media screen and (max-width: 480px) {
+    .dtop {
+        display:none
+    }
+}
+
+        </style>
 <style>
 .block{
   background: linear-gradient(#111, #333);
@@ -873,6 +886,7 @@ h4 a{
 .column:nth-child(4n+1) { clear: left; }
   </style>
   <style>
+  html,body{overflow-x: hidden;}
   </style>
 </head>
 <body>
@@ -959,7 +973,179 @@ h4 a{
 
             <p class="newclass">Our state of the art Basic Alcohol Research Tool for Experiencing New Drinks and Enjoying Responsibly (BARTENDER for short) will help you find the perfect drink. Whether you want to make something with what you've got on hand, or pair a spirit with your spirits, the BARTENDER has you covered.</p>
         </div>
-        <div class="container">
+
+<div class="mobar">
+
+  <div class="container">
+<div>
+<p>
+  Tap on the Liquor, Mixors, and Garnishes you have, then tap on the martini glass and BARTENDER will do the rest.
+</p>
+</div>
+<div  >    <div class="block">
+<input type="radio" name="city" id="cityA" checked />
+<label for="cityA"><span>Liquor</span></label>
+<div class="info" style="    overflow-y:scroll;">
+
+        <option id="vod"value="vod">Vodka</option>
+        <option id="ver"value="ver">Vermouth</option>
+        <option id="blc"value="blc">Blue Curacao</option>
+        <option id="brb"value="brb">Bourbon</option>
+        <option id="chm"value="chm">Champagne</option>
+        <option id="cdc"value="cdc">Creme De Cacao</option>
+        <option id="gin"value="gin">Gin</option>
+        <option id="lir"value="lir">Light Rum</option>
+        <option id="pps"value="pps">Peppermint Schnapps</option>
+        <option id="rum"value="rum">Rum</option>
+        <option id="teq"value="teq">Tequila</option>
+        <option id="tps"value="tps">Triple Sec</option>
+        <option id="vav"value="vav">Vanilla Vodka</option>
+        <option id="wsk"value="wsk">Whiskey</option>
+        <option id="wir"value="wir">White Rum</option>
+</div>
+</div>
+<div class="block">
+<input type="radio" name="city" id="cityB"/>
+<label for="cityB"><span>Mixers</span></label>
+<div class="info" style="    overflow-y:scroll;">
+  <option id="apc"value="apc">Apple Cider</option>
+  <option id="bit"value="bit">Bitters</option>
+  <option id="bpe"value="bpe">Black Pepper</option>
+  <option id="cso"value="cso">Club Soda</option>
+  <option id="col"value="col">Cola</option>
+  <option id="egn"value="egn">Eggnog</option>
+  <option id="gnb"value="gnb">Ginger Beer</option>
+  <option id="ghr"value="ghr">Grated Horseradish</option>
+  <option id="hon"value="hon">Honey</option>
+  <option id="hts"value="hts">Hot Sauce</option>
+  <option id="lmj"value="lmj">Lemon Juice</option>
+  <option id="lls"value="lls">Lemon Lime Soda</option>
+  <option id="lim"value="lim">Lime Juice</option>
+  <option id="mil"value="mil">Milk</option>
+  <option id="min"value="min">Mint Leaves</option>
+  <option id="ogj"value="ogj">Orange Juice</option>
+  <option id="pmp"value="pmp">Pumpkin Puree</option>
+  <option id="rbl"value="rbl">Red Bull</option>
+  <option id="sal"value="sal">Salt</option>
+  <option id="ssp"value="ssp">Simple Syrup</option>
+  <option id="scb"value="scb">Sugar Cube</option>
+  <option id="sas"value="sas">Sweet and Sour</option>
+  <option id="tom"value="tom">Tomato Juice</option>
+  <option id="ton"value="ton">Tonic Water</option>
+  <option id="wat"value="wat">Water</option>
+  <option id="wor"value="wor">Worcestershire Sauce</option>
+</div>
+</div>
+<div class="block">
+<input type="radio" name="city" id="cityC" />
+<label for="cityC"><span>Garnishes</span></label>
+<div class="info" style="    overflow-y:scroll;">
+
+  <option id="apl"value="apl">Apple</option>
+  <option id="cel"value="cel">Celery</option>
+  <option id="lem"value="lem">Lemon</option>
+  <option id="les"value="les">Lemon Slice</option>
+  <option id="let"value="let">Lemon Twist</option>
+  <option id="lme"value="lme">Lime</option>
+  <option id="mac"value="mac">Maraschino Cherry</option>
+  <option id="mit"value="mit">Mint</option>
+  <option id="nut"value="nut">Nutmeg</option>
+  <option id="oli"value="oli">Olives</option>
+  <option id="osl"value="osl">Orange Slice</option>
+  <option id="sgr"value="sgr">Sugar Rim</option>
+  <option id="cin"value="cin">Cinnamon</option>
+
+</div>
+</div>
+</div>
+<!-- <div class="column-left">    <ol data-draggable="target" style="height:300px;width:400px;margin-left:50px" >
+    <option value="1" style="color:#CDCDCD;background-color:#24242A"disabled>Ingredients</option>
+    <option data-draggable="item" value="vodka">Vodka</option>
+    <option data-draggable="item" value="vermouth">Vermouth</option>
+    <option data-draggable="item" value="olives">Olives</option>
+    <option data-draggable="item" value="bourbon">Bourbon</option>
+    <option data-draggable="item" value="bitters">Bitters</option>
+    <option data-draggable="item"value="sugar">Sugar Cubes</option>
+    <option data-draggable="item"value="rind">Citrus Rind</option>
+    <option data-draggable="item"value="water">Water</option>
+    <option data-draggable="item"value="cherries">Cherries</option>
+    <option data-draggable="item"value="whiskey">Whiskey</option>
+  </ol></div> -->
+<div >
+<div class="block" >
+<input type="radio" name="hope" id="hope"checked />
+<label for="hope"><span>Ingredients</span></label>
+<div class="info" style=" height:300px;   overflow-y:scroll;">
+  <ul  style="list-style: none;"  id= "test" >
+
+
+
+  </ul>
+</div>
+
+</div>
+</div>
+<figure>
+<img onclick="myFunction()" class="img-responsive tilt pic center-block wow fadeInUp" data-wow-delay=".3s" src="/img/grey.png" alt="logo" height="100" width="100" style="margin: 0 auto;margin-top:5%">
+
+</figure>
+</div>
+<div class="block"  style="margin-top:15px">
+<input type="radio" name="feel" id="feel"checked />
+<label for="feel"><span>Moods</span></label>
+<div class="info" style=" height:300px;   overflow-y:scroll;">
+  <ul  style="list-style: none;"  id= "feel" >
+    <div class="columns">
+                                 <div class="column"style="margin-top:1%;text-align:center"><h4 style="text-align:">Happy</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/263a.svg" height="150" width="150"class="img-responsive" alt="6"  class="img-responsive"></div></a>
+                                 <div class="column"style="margin-top:1%;margin-left:30%;text-align:center"><h4>Hungover</h4><a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f635.svg" height="150" width="150"class="img-responsive" alt="6" ></div></a>
+                                 <!-- <div class="column"style="margin-top:1%"><h4>Flush</h4><a href="#" data-toggle="modal" data-target="#flush-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a>
+                                 <div class="column"style="margin-top:1%"><h4>Sick</h4><a href="#" data-toggle="modal" data-target="#shell-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a> -->
+
+    </div>
+    <div class="columns">
+                                 <!-- <div class="column"style="margin-top:1%;text-align:center"><h4 style="text-align:">Happy</h4><a href="#" data-toggle="modal" data-target="#veg-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/263a.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%" class="img-responsive"></div></a>
+                                 <div class="column"style="margin-top:1%"><h4>Hungover</h4><a href="#" data-toggle="modal" data-target="#bread-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f635.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a> -->
+                                 <div class="column"style="margin-top:1%;text-align:center"><h4>Flush</h4><a href="#" data-toggle="modal" data-target="#flush-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f911.svg" height="100" width="100"class="img-responsive" alt="6" ></div></a>
+                                 <div class="column"style="margin-top:1%;margin-left:30%;text-align:center"><h4>Sick</h4><a href="#" data-toggle="modal" data-target="#shell-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f912.svg" height="100" width="100"class="img-responsive" alt="6" ></div></a>
+
+  </div>
+                                  <div class="columns">
+                                   <div class="column"style="margin-top:1%;text-align:center"><h4>Flirty</h4><a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" ></div></a>
+                                   <div class="column"style="margin-top:1%;margin-left:30%;text-align:center"><h4>Heart Broken</h4><a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" ></div></a>
+                                   <!-- <div class="column"style="margin-top:1%"><h4>Stoked</h4><a href="#" data-toggle="modal" data-target="#stoked-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a>
+                                   <div class="column"style="margin-top:1%"><h4>Second Wind</h4><a href="#" data-toggle="modal" data-target="#second-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61c.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:30%"></div></a> -->
+                                  </div>
+                                  <div class="columns">
+                                   <!-- <div class="column"style="margin-top:1%"><h4>Flirty</h4><a href="#" data-toggle="modal" data-target="#shellfish-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f618.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a>
+                                   <div class="column"style="margin-top:1%"><h4>Heart Broken</h4><a href="#" data-toggle="modal" data-target="#cheese-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f62d.svg" height="100" width="100"class="img-responsive" alt="6" style="margin-left:25%"></div></a> -->
+                                   <div class="column"style="margin-top:1%;text-align:center"><h4>Stoked</h4><a href="#" data-toggle="modal" data-target="#stoked-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61d.svg" height="100" width="100"class="img-responsive" alt="6"></div></a>
+                                   <div class="column"style="margin-top:1%;margin-left:30%;text-align:center"><h4 >Second Wind</h4><a href="#" data-toggle="modal" data-target="#second-modal"><img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61c.svg" height="100" width="500"class="img-responsive" alt="6" ></div></a>
+                                  </div>
+
+
+  </ul>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container dtop">
 
             <div class="row" style="width:100%">
             	<div class="col-md-6">
@@ -1155,9 +1341,7 @@ h4 a{
                           <div id="music"></div>
 
 
-                          <div id="maps">
-                          <!--map dynamically added based on geo location-->
-                          </div>
+
                     </div>
                     <div class="tab-pane fade" id="tab8default">
                       <div id="test"></div>
@@ -1195,32 +1379,33 @@ h4 a{
             <hr class="sep">
             <p>Learn them. Make them. Drink them.</p>
             <div class="row">
-                <div class=" containerdiv col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <a class="portfolio-box" >
-                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/kettel-one-vodka-martini.jpg" class="img-responsive" alt="1">
-<div class="cornerimage">
-  <img class="martini-all " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
-</div>
-<div class="cornerimage">
-  <img class="martini-none " src="http://www.clker.com/cliparts/Z/Z/S/Y/S/w/red-circle-cross-transparent-background-hi.png" height="100" width="100" alt="">
-</div>
-<div class="cornerimage">
-  <img class="martini-some " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
-</div>
+                
+                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                    <a  class="portfolio-box" >
+                        <img src="http://liquor.s3.amazonaws.com/wp-content/uploads/2012/08/kettel-one-vodka-martini.jpg" class="img-responsive" alt="2">
+                        <div class="cornerimage">
+                          <img class="martini-all " src="http://cliparts.co/cliparts/Lcd/5do/Lcd5doyqi.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="cornerimage">
+                          <img class="martini-none " src="http://www.clker.com/cliparts/Z/Z/S/Y/S/w/red-circle-cross-transparent-background-hi.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="cornerimage">
+                          <img class="martini-some " src="http://www.clipartbest.com/cliparts/9cR/gEK/9cRgEKbgi.png" height="100" width="100" alt="">
+                        </div>
                         <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded" style="margin-top:-10%">
-                                     Martini
-                                </div>
-                                <p style="padding:5%; color:white">Shake gin with a splash of vermouth and ice. Strain into martini glass and garnish with olive.</p>
-                                <div class="project-name" style="text-align:left;margin-top:-10%">
-                                  <ul>
-                                    <li class="gin">3 oz of Gin</li>
-                                    <li class="vermouth">1 splash Vermouth</li>
-                                    <li class="olives">3 olives</li>
-                                  </ul>
-                                </div>
-                            </div>
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-category text-faded" style="margin-top:-10%">
+                                  Martini
+                              </div>
+                              <p style="padding:5%; color:white">Shake gin with a splash of vermouth and ice. Strain into martini glass and garnish with olive.</p>
+                              <div class="project-name" style="text-align:left;margin-top:-10%">
+                                <ul>
+                                  <li class="gin">3 oz of Gin</li>
+                                  <li class="vermouth">1 splash Vermouth</li>
+                                  <li class="olives">3 olives</li>
+                                </ul>
+                              </div>
+                          </div>
                         </div>
                     </a>
                 </div>
@@ -1762,9 +1947,13 @@ h4 a{
                         </div>
                     </a>
                 </div>
+                <div class="mobar" id="maps">
+                <!--map dynamically added based on geo location-->
+                </div>
 
 
     </section>
+
     <!-- Work Process
 	============================================= -->
 
@@ -1808,7 +1997,9 @@ h4 a{
                 </div>
             </div>
         </div>
+
     </section>
+
     <!-- Contact Us
 	============================================= -->
 
@@ -1837,13 +2028,16 @@ h4 a{
 
 <!-- Map Section -->
 
-<div id="maps">
-<!--map dynamically added based on geo location-->
-</div>
+
     <!-- Footer
 	============================================= -->
     <footer>
-        <div class="container">
+        <div class="container mobar">
+            <h1 style="font-size:25px">B.A.R.T.E.N.D.E.R</h1>
+
+            <h6>&copy; 2016 Team 3</h6>
+        </div>
+        <div class="container dtop">
             <h1>B.A.R.T.E.N.D.E.R</h1>
 
             <h6>&copy; 2016 Team 3</h6>
