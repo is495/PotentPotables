@@ -785,7 +785,7 @@ $( ".rum-none" ).addClass(function( index ) {
 //Rum and Cola end
 //Redbull Vodka start
 var n = test.includes("Vodka");
-var v = test.includes("Redbull");
+var v = test.includes("Red Bull");
 
 if ((n==true) && (v==true)){
   $( ".red-all" ).addClass(function( index ) {
@@ -967,7 +967,7 @@ if ((n==true) && (v==true) && (s==true)&& (r==true) && (t==true) && (u==true) &&
     return "all" ;
   });
 }
-else if ((n==true)){
+else if ((n==true) && (l==true) && (b==true)){
 $( ".man-some" ).addClass(function( index ) {
   return "some" ;
 });
