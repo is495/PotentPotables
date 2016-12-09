@@ -12,6 +12,10 @@ window.onload = function(){
         iframe.id="randomid";
         iframe.setAttribute("src", link);
         document.getElementById("maps").appendChild(iframe);
+        console.log ( 'Running Location Services' );
+        console.log ( 'Location Services Results:' );
+        console.log ( position.coords.latitude + ", "+position.coords.longitude );
+        
     }
 
 }
