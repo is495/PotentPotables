@@ -1,12 +1,388 @@
 $(document).ready(function(){
+  var test= [ "Vodka",
+  "Vermouth",
+  "Olives",
+  "Bourbon",
+  "Bitters",
+  "Sugar",
+  "Water",
+  "Rind",
+  "Cherries",
+  "Whiskey",
+  "Blue Curacao",
+  "Champagne",
+  "Creme de Cacao",
+  "Gin",
+  "Light Rum",
+  "Peppermint Schnapps",
+  "Rum",
+  "Tequila",
+  "Triple Sec",
+  "Vanilla Vodka",
+  "White Rum",
+  "Apple",
+  "Celery",
+  "Lemon",
+  "Lemon Slice",
+  "Lemon Twist",
+  "Lime",
+  "Maraschino Cherry",
+  "Mint",
+  "Nutmeg",
+  "Orange Slice",
+  "Sugar Rim",
+  "Cinnamon",
+  "Apple Cider",
+  "Black Pepper",
+  "Club Soda",
+  "Cola",
+  "Eggnog",
+  "Ginger Beer",
+  "Grated Horseradish",
+  "Honey",
+  "Hot Sauce",
+  "Lemon Juice",
+  "Lemon Lime Soda",
+  "Lime Juice",
+  "Milk",
+  "Mint Juice",
+  "Orange Juice",
+  "Pumpkin Puree",
+  "Red Bull",
+  "Salt",
+  "Simple Syrup",
+  "Sugar Cube",
+  "Sweet and Sour",
+  "Tomato Juice",
+  "Tonic Water",
+  "Worcestershire Sauce",]
+  // alert(test);
+  var n = test.includes("Vodka");
+  if (n==true) {  console.log("Green: Vodka");
+  }
+  else {  console.log("Red: Vodka");
+  }
+  var n = test.includes("Vermouth");
+  if (n==true) {  console.log("Green: Vermouth");
+  }
+  else {  console.log("Red: Vermouth");
+  }
+  var n = test.includes("Olives");
+  if (n==true) {  console.log("Green: Olives");
+  }
+  else {  console.log("Red: Olives");
+  }
+  var n = test.includes("Bourbon");
+  if (n==true) {  console.log("Green: Bourbon");
+  }
+  else {  console.log("Red: Bourbon");
+  }
+  var n = test.includes("Bitters");
+  if (n==true) {  console.log("Green: Bitters");
+  }
+  else {  console.log("Red: Bitters");
+  }
+  var n = test.includes("Sugar");
+  if (n==true) {  console.log("Green: Sugar");
+  }
+  else {  console.log("Red: Sugar");
+  }
+  var n = test.includes("Water");
+  if (n==true) {  console.log("Green: Water");
+  }
+  else {  console.log("Red: Water");
+  }
+  var n = test.includes("Rind");
+  if (n==true) {  console.log("Green: Rind");
+  }
+  else {  console.log("Red: Rind");
+  }
+  var n = test.includes("Cherries");
+  if (n==true) {  console.log("Green: Cherries");
+  }
+  else {  console.log("Red: Cherries");
+  }
+  var n = test.includes("Whiskey");
+  if (n==true) {  console.log("Green: Whiskey");
+  }
+  else {  console.log("Red: Whiskey");
+  }
+  var n = test.includes("Blue Curacao");
+  if (n==true) {  console.log("Green: Blue Curacao");
+  }
+  else {  console.log("Red: Blue Curacao");
+  }
+  var n = test.includes("Champagne");
+  if (n==true) {  console.log("Green: Champagne");
+  }
+  else {  console.log("Red: Champagne");
+  }
+  var n = test.includes("Creme de Cacao");
+  if (n==true) {  console.log("Green: Creme de Cacao");
+  }
+  else {  console.log("Red: Creme de Cacao");
+  }
+  var n = test.includes("Gin");
+  if (n==true) {  console.log("Green: Gin");
+  }
+  else {  console.log("Red: Gin");
+  }
+  var n = test.includes("Light Rum");
+  if (n==true) {  console.log("Green: Light Rum");
+  }
+  else {  console.log("Red: Light Rum");
+  }
+  var n = test.includes("Peppermint Schnapps");
+  if (n==true) {  console.log("Green: Peppermint Schnapps");
+  }
+  else {  console.log("Red: Peppermint Schnapps");
+  }
+  var n = test.includes("Rum");
+  if (n==true) {  console.log("Green: Rum");
+  }
+  else {  console.log("Red: Rum");
+  }
+  var n = test.includes("Tequila");
+  if (n==true) {  console.log("Green: Tequila");
+  }
+  else {  console.log("Red: Tequila");
+  }
+  var n = test.includes("Triple Sec");
+  if (n==true) {  console.log("Green: Triple Sec");
+  }
+  else {  console.log("Red: Triple Sec");
+  }
+  var n = test.includes("Vanilla Vodka");
+  if (n==true) {  console.log("Green: Vanilla Vodka");
+  }
+  else {  console.log("Red: Vanilla Vodka");
+  }
+  var n = test.includes("White Rum");
+  if (n==true) {  console.log("Green: White Rum");
+  }
+  else {  console.log("Red: White Rum");
+  }
+  var n = test.includes("Apple");
+  if (n==true) {  console.log("Green: Apple");
+  }
+  else {  console.log("Red: Apple");
+  }
+  var n = test.includes("Celery");
+  if (n==true) {  console.log("Green: Celery");
+  }
+  else {  console.log("Red: Celery");
+  }
+  var n = test.includes("Lemon");
+  if (n==true) {  console.log("Green: Lemon");
+  }
+  else {  console.log("Red: Lemon");
+  }
+  var n = test.includes("Lemon Slice");
+  if (n==true) {  console.log("Green: Lemon Slice");
+  }
+  else {  console.log("Red: Lemon Slice");
+  }
+  var n = test.includes("Lemon Twist");
+  if (n==true) {  console.log("Green: Lemon Twist");
+  }
+  else {  console.log("Red: Lemon Twist");
+  }
+  var n = test.includes("Lime");
+  if (n==true) {  console.log("Green: Lime");
+  }
+  else {  console.log("Red: Lime");
+  }
+  var n = test.includes("Maraschino Cherry");
+  if (n==true) {  console.log("Green: Maraschino Cherry");
+  }
+  else {  console.log("Red: Maraschino Cherry");
+  }
+  var n = test.includes("Mint");
+  if (n==true) {  console.log("Green: Mint");
+  }
+  else {  console.log("Red: Mint");
+  }
+  var n = test.includes("Nutmeg");
+  if (n==true) {  console.log("Green: Nutmeg");
+  }
+  else {  console.log("Red: Nutmeg");
+  }
+  var n = test.includes("Orange Slice");
+  if (n==true) {  console.log("Green: Orange Slice");
+  }
+  else {  console.log("Red: Orange Slice");
+  }
+  var n = test.includes("Sugar Rim");
+  if (n==true) {  console.log("Green: Sugar Rim");
+  }
+  else {  console.log("Red: Sugar Rim");
+  }
+  var n = test.includes("Cinnamon");
+  if (n==true) {  console.log("Green: Cinnamon");
+  }
+  else {  console.log("Red: Cinnamon");
+  }
+  var n = test.includes("Apple Cider");
+  if (n==true) {  console.log("Green: Apple Cider");
+  }
+  else {  console.log("Red: Apple Cider");
+  }
+  var n = test.includes("Black Pepper");
+  if (n==true) {  console.log("Green: Black Pepper");
+  }
+  else {  console.log("Red: Black Pepper");
+  }
+  var n = test.includes("Club Soda");
+  if (n==true) {  console.log("Green: Club Soda");
+  }
+  else {  console.log("Red: Club Soda");
+  }
+  var n = test.includes("Cola");
+  if (n==true) {  console.log("Green: Cola");
+  }
+  else {  console.log("Red: Cola");
+  }
+  var n = test.includes("Eggnog");
+  if (n==true) {  console.log("Green: Eggnog");
+  }
+  else {  console.log("Red: Eggnog");
+  }
+  var n = test.includes("Ginger Beer");
+  if (n==true) {  console.log("Green: Ginger Beer");
+  }
+  else {  console.log("Red: Ginger Beer");
+  }
+  var n = test.includes("Grated Horseradish");
+  if (n==true) {  console.log("Green: Grated Horseradish");
+  }
+  else {  console.log("Red: Grated Horseradish");
+  }
+  var n = test.includes("Honey");
+  if (n==true) {  console.log("Green: Honey");
+  }
+  else {  console.log("Red: Honey");
+  }
+  var n = test.includes("Hot Sauce");
+  if (n==true) {  console.log("Green: Hot Sauce");
+  }
+  else {  console.log("Red: Hot Sauce");
+  }
+  var n = test.includes("Lemon Juice");
+  if (n==true) {  console.log("Green: Lemon Juice");
+  }
+  else {  console.log("Red: Lemon Juice");
+  }
+  var n = test.includes("Lemon Lime Soda");
+  if (n==true) {  console.log("Green: Lemon Lime Soda");
+  }
+  else {  console.log("Red: Lemon Lime Soda");
+  }
+  var n = test.includes("Lime Juice");
+  if (n==true) {  console.log("Green: Lime Juice");
+  }
+  else {  console.log("Red: Lime Juice");
+  }
+  var n = test.includes("Milk");
+  if (n==true) {  console.log("Green: Milk");
+  }
+  else {  console.log("Red: Milk");
+  }
+  var n = test.includes("Mint Juice");
+  if (n==true) {  console.log("Green: Mint Juice");
+  }
+  else {  console.log("Red: Mint Juice");
+  }
+  var n = test.includes("Orange Juice");
+  if (n==true) {  console.log("Green: Orange Juice");
+  }
+  else {  console.log("Red: Orange Juice");
+  }
+  var n = test.includes("Pumpkin Puree");
+  if (n==true) {  console.log("Green:Pumpkin Puree");
+  }
+  else {  console.log("Red: Pumpkin Puree");
+  }
+  var n = test.includes("Red Bull");
+  if (n==true) {  console.log("Green: Red Bull");
+  }
+  else {  console.log("Red: Red Bull");
+  }
+  var n = test.includes("Salt");
+  if (n==true) {  console.log("Green: Salt");
+  }
+  else {  console.log("Red: Salt");
+  }
+  var n = test.includes("Simple Syrup");
+  if (n==true) {  console.log("Green: Simple Syrup");
+  }
+  else {  console.log("Red: Simple Syrup");
+  }
+  var n = test.includes("Sugar Cube");
+  if (n==true) {  console.log("Green: Sugar Cube");
+  }
+  else {  console.log("Red: Sugar Cube");
+  }
+  var n = test.includes("Sweet and Sour");
+  if (n==true) {  console.log("Green: Sweet and Sour");
+  }
+  else {  console.log("Red: Sweet and Sour");
+  }
+  var n = test.includes("Tomato Juice");
+  if (n==true) {  console.log("Green: Tomato Juice");
+  }
+  else {  console.log("Red: Tomato Juice");
+  }
+  var n = test.includes("Tonic Water");
+  if (n==true) {  console.log("Green: Tonic Water");
+  }
+  else {  console.log("Red: Tonic Water");
+  }
+  var n = test.includes("Worcestershire Sauce");
+  if (n==true) {  console.log("Green: Worcestershire Sauce");
+  }
+  else {  console.log("Red: Worcestershire Sauce");
+  }
+//Drink start
+//OLD Fashioned Start
+var n = test.includes("Bourbon");
+var v = test.includes("Bitters");
+var s = test.includes("Sugar");
+
+if ((n==true) && (v==true)&& (s==true)) {  console.log("Old Fashioned: All Ingredients Present");
+}
+else if ((n==true) && (v==true)){  console.log("Old Fashioned: Most Igredients Present");
+}
+else {  console.log("Old Fashioned: Not Enough Ingredients Present");
+}
+//OLD Fashioned End
 
 
+//Daquiri start
+var n = test.includes("White Rum");
+var v = test.includes("Lemon");
+var s = test.includes("Lime Juice");
+var r = test.includes("Simple Syrup");
 
+if ((n==true) && (v==true) && (s==true) && (r==true)) {  console.log("Daquiri: All Ingredients Present");
+}
+else if ((n==true)){  console.log("Daquiri: Most Igredients Present");
+}
+else {  console.log("Daquiri: Not Enough Ingredients Present");
+}
+//Daquiri end
+//Rum and Cola start
+var n = test.includes("White Rum");
+var v = test.includes("Lime");
+var s = test.includes("Cola");
+var r = test.includes("Lime Juice");
 
-
-
-
-
+if ((n==true) && (v==true) && (s==true) && (r==true)){  console.log("Rum and Coke: All Ingredients Present");
+}
+else if (n==true){  console.log("Rum and Coke: Essential Igredients Present");
+}
+else {  console.log("Rum and Coke: Not Enough Ingredients Present");
+}
+//Rum and Cola end
 
 })
 function myFunction() {
@@ -715,20 +1091,20 @@ $( ".old-none" ).addClass(function( index ) {
 //Bloody Mary start
 var n = test.includes("Vodka");
 var v = test.includes("Celery");
-var s = test.includes("Lemon");
+var s = test.includes("Hot Sauce");
 var r = test.includes("Black Pepper");
 var t = test.includes("Grated Horseradish");
-var u = test.includes("Lemon Juice");
+var u = test.includes("Lemon");
 var p = test.includes("Salt");
 var l = test.includes("Tomato Juice");
 var b = test.includes("Worcestershire Sauce")
 
-if ((n==true) && (v==true) && (s==true)&& (r==true) && (t==true) && (u==true) && (p==true) && (l==true) && (b==true)){
+if ((n==true) && (v==true) && (s==true) && (r==true) && (t==true) && (u==true) && (p==true) && (l==true) && (b==true)){
   $( ".man-all" ).addClass(function( index ) {
     return "all" ;
   });
 }
-else if ((n==true)){
+else if ((n==true)&& (l==true)&& (b==true)){
 $( ".man-some" ).addClass(function( index ) {
   return "some" ;
 });
@@ -739,6 +1115,8 @@ $( ".man-none" ).addClass(function( index ) {
 });
 }
 //Bloody Mary end
+
+
 //Daquiri start
 var n = test.includes("White Rum");
 var v = test.includes("Lemon");
@@ -951,33 +1329,7 @@ $( ".marg-none" ).addClass(function( index ) {
 });
 }
 //Margarita end
-//Bloody Mary start
-var n = test.includes("Vodka");
-var v = test.includes("Celery");
-var s = test.includes("Lemon");
-var r = test.includes("Black Pepper");
-var t = test.includes("Grated Horseradish");
-var u = test.includes("Lemon Juice");
-var p = test.includes("Salt");
-var l = test.includes("Tomato Juice");
-var b = test.includes("Worcestershire Sauce")
 
-if ((n==true) && (v==true) && (s==true)&& (r==true) && (t==true) && (u==true) && (p==true) && (l==true) && (b==true)){
-  $( ".man-all" ).addClass(function( index ) {
-    return "all" ;
-  });
-}
-else if ((n==true) && (l==true) && (b==true)){
-$( ".man-some" ).addClass(function( index ) {
-  return "some" ;
-});
-}
-else {
-$( ".man-none" ).addClass(function( index ) {
-  return "none" ;
-});
-}
-//Bloody Mary end
 //Mojito start
 var n = test.includes("Light Rum");
 var v = test.includes("Mint Leaves");
@@ -1004,8 +1356,8 @@ $( ".moj-none" ).addClass(function( index ) {
 //Lemon Drop start
 var n = test.includes("Triple Sec");
 var v = test.includes("Vodka");
-var s = test.includes("Sugar Rum");
-var r = test.includes("Lemon Juice");
+var s = test.includes("Sugar Rim");
+var r = test.includes("Lemon");
 
 if ((n==true) && (v==true) && (s==true) && (r==true)){
   $( ".drop-all" ).addClass(function( index ) {
